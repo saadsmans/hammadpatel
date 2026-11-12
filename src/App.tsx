@@ -237,15 +237,15 @@ export function App() {
                               </div>
                               <div className="flex items-center justify-between">
                                 <span className="text-slate-400">TOPOLOGIES:</span>
-                                <span className="text-[#00ff66] font-bold">8 Analog Topologies Active</span>
+                                <span className="text-[#00ff66] font-bold">14 Active Circuit Topologies</span>
                               </div>
                               <div className="flex items-center justify-between">
-                                <span className="text-slate-400">MEASUREMENT:</span>
-                                <span className="text-[#00f0ff]">Scope Cursors (ΔV &amp; Δt)</span>
+                                <span className="text-slate-400">NEW MODULES:</span>
+                                <span className="text-[#00f0ff]">Radar Doppler, DSP, QPSK &amp; CMOS</span>
                               </div>
                               <div className="flex items-center justify-between">
-                                <span className="text-slate-400">FREQUENCY ANALYSIS:</span>
-                                <span className="text-emerald-400 font-bold">Bode dB Magnitude &amp; Phase</span>
+                                <span className="text-slate-400">ANALYSIS MODES:</span>
+                                <span className="text-emerald-400 font-bold">Scope · Bode · PPI · Cursors</span>
                               </div>
                             </div>
 
@@ -292,25 +292,25 @@ export function App() {
                             Hands-On ECE Hardware Engineering Simulator · Built by Hammad Patel
                           </div>
                           <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-cyber leading-relaxed mb-4">
-                            Interactive electronic circuit simulation laboratory combining core Electronics &amp; Communication Engineering principles with real-time browser graphics. Simulates 8 analog circuit topologies with dual-trace oscilloscope CRT graphics, interactive cursors for voltage and time delta measurements, dynamic Bode plot frequency response, and real Web Audio acoustic tone synthesis.
+                            Interactive electronic circuit simulation laboratory combining core Electronics &amp; Communication Engineering principles. Simulates 14 analog, RF, radar, VLSI, and DSP topologies with dual-trace oscilloscope CRT graphics, interactive delta measurement cursors, dynamic Bode plot frequency response, radar PPI sweep, digital I/Q constellation, and real Web Audio acoustic tone synthesis.
                           </p>
 
                           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-mono mb-5">
                             <div className="flex items-center gap-1.5 text-slate-700 dark:text-slate-200">
                               <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-[#00ff66]" />
-                              <span>8 Circuit Topologies &amp; Schematics</span>
+                              <span>14 Active Circuit Topologies</span>
                             </div>
                             <div className="flex items-center gap-1.5 text-slate-700 dark:text-slate-200">
                               <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-[#00ff66]" />
-                              <span>Interactive Scope Cursors (ΔV &amp; Δt)</span>
+                              <span>Radar Doppler Echo &amp; DSP Filters</span>
                             </div>
                             <div className="flex items-center gap-1.5 text-slate-700 dark:text-slate-200">
                               <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-[#00ff66]" />
-                              <span>Bode dB Gain &amp; Phase Response</span>
+                              <span>AM/FM &amp; QPSK Digital Keying</span>
                             </div>
                             <div className="flex items-center gap-1.5 text-slate-700 dark:text-slate-200">
                               <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-[#00ff66]" />
-                              <span>Real Web Audio Synthesizer</span>
+                              <span>Bode Plot &amp; Precision Cursors</span>
                             </div>
                           </div>
 

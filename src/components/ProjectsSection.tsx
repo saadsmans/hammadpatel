@@ -61,21 +61,21 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onOpenHireMe, 
           </h2>
           
           <p className="mt-3 text-slate-600 dark:text-slate-300 max-w-3xl text-sm sm:text-base font-cyber leading-relaxed">
-            Advanced real-time electronic circuit simulation laboratory inspired by <strong className="text-sky-600 dark:text-[#00f0ff]">IIT Bombay Spoken Tutorial</strong> research. Complete with 8 analog circuit topologies, interactive precision measurement cursors (ΔV, Δt), Bode magnitude &amp; phase frequency analysis, real-time audio tone synthesis, and harmonic FFT spectrum telemetry.
+            Advanced real-time electronic circuit simulation laboratory inspired by <strong className="text-sky-600 dark:text-[#00f0ff]">IIT Bombay Spoken Tutorial</strong> research, comprehensively covering core ECE disciplines: Analog Filters, Resonant Circuits, Bridge Rectification, 555 Timers, AM/FM Modulation, Digital BPSK/QPSK Keying, VLSI CMOS Inverters, Power Buck Converters, Radar Echo &amp; Doppler Velocity (RNA), and DSP Digital Filters.
           </p>
 
           <div className="mt-4 flex flex-wrap items-center justify-center gap-2.5 text-xs font-mono">
             <span className="px-3 py-1 rounded-full bg-white dark:bg-black/60 border border-slate-200 dark:border-[#00f0ff]/30 text-sky-700 dark:text-[#00f0ff] shadow-sm">
-              8 Circuit Topologies Active
+              14 Active Circuit Topologies
             </span>
             <span className="px-3 py-1 rounded-full bg-white dark:bg-black/60 border border-slate-200 dark:border-[#00ff66]/30 text-emerald-700 dark:text-[#00ff66] shadow-sm">
-              Bode Frequency Response &amp; Phase
+              Radar Doppler &amp; DSP Filters
             </span>
             <span className="px-3 py-1 rounded-full bg-white dark:bg-black/60 border border-slate-200 dark:border-[#fcee0a]/30 text-amber-700 dark:text-[#fcee0a] shadow-sm">
-              Precision Scope Cursors (ΔV &amp; Δt)
+              AM/FM &amp; QPSK Digital Keying
             </span>
             <span className="px-3 py-1 rounded-full bg-white dark:bg-black/60 border border-slate-200 dark:border-indigo-400/30 text-indigo-700 dark:text-indigo-400 shadow-sm">
-              60 FPS Phosphor CRT Engine
+              60 FPS Scope · Bode · Radar PPI · Web Audio
             </span>
           </div>
         </div>
