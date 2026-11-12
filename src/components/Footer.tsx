@@ -8,7 +8,8 @@ import {
   Cpu, 
   Radio, 
   Code2,
-  BookOpen
+  BookOpen,
+  ExternalLink
 } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolioData';
 
@@ -47,9 +48,28 @@ export const Footer: React.FC<FooterProps> = ({ onOpenCV, onOpenHireMe, onNaviga
             <p className="text-xs text-slate-600 dark:text-slate-400 max-w-md leading-relaxed mb-4">
               Electronics &amp; Communication Engineering student at Government Engineering College, Bharuch (2023–2027) with 6.38 CGPA (till Sem 6) entering Sem 7 (Winter 2026), IIT Bombay Spoken Tutorial Intern, with strong expertise in RF/Satellite Communications, VLSI, Circuit Simulation, and Full-Stack Web Development.
             </p>
-            <div className="flex items-center gap-2 text-xs font-mono text-slate-500">
+            <div className="flex items-center gap-2 text-xs font-mono text-slate-500 mb-4">
               <span className="w-2 h-2 rounded-full bg-emerald-500" />
               <span>Available for Core ECE Roles, Hardware R&amp;D &amp; Technical Internships</span>
+            </div>
+
+            {/* Virtual Lab Studio Collaboration Attribution */}
+            <div className="p-3 rounded-2xl bg-slate-50 dark:bg-slate-900/80 border border-slate-200 dark:border-white/10 w-full max-w-md">
+              <p className="text-xs text-slate-700 dark:text-slate-300 font-medium leading-relaxed flex flex-wrap items-center gap-1 font-mono">
+                <span className="font-bold text-slate-900 dark:text-white">Virtual Lab Studio</span>
+                <span className="text-slate-400">|</span>
+                <span>Designed &amp; Developed with ❤️ by</span>
+                <a
+                  href="https://clickncreate.co.uk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-bold text-sky-600 dark:text-[#00f0ff] hover:underline inline-flex items-center gap-0.5 group"
+                >
+                  Saad
+                  <ExternalLink className="w-3 h-3 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                </a>
+                <span>&amp; Hammad.</span>
+              </p>
             </div>
           </div>
 
@@ -81,7 +101,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenCV, onOpenHireMe, onNaviga
                   className="w-full py-2.5 px-3.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-xs font-semibold hover:bg-slate-200 dark:hover:bg-slate-700 text-left transition-colors flex items-center justify-between"
                 >
                   <span>Inspect Official CV</span>
-                  <span className="text-[10px] font-mono text-indigo-400">PDF View & Download</span>
+                  <span className="text-[10px] font-mono text-indigo-400">PDF View &amp; Download</span>
                 </button>
                 <button
                   onClick={onOpenHireMe}
@@ -104,8 +124,22 @@ export const Footer: React.FC<FooterProps> = ({ onOpenCV, onOpenHireMe, onNaviga
 
         {/* Bottom copyright row */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <div className="flex items-center gap-1 font-mono">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 font-mono text-center sm:text-left">
             <span>© {new Date().getFullYear()} Hammad Patel · GEC Bharuch (ECE 2023–2027). All rights reserved.</span>
+            <span className="hidden sm:inline text-slate-400">·</span>
+            <span>
+              Virtual Lab Studio | Designed &amp; Developed with ❤️ by{' '}
+              <a 
+                href="https://clickncreate.co.uk" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="font-bold text-sky-600 dark:text-[#00f0ff] hover:underline inline-flex items-center gap-0.5"
+              >
+                Saad
+                <ExternalLink className="w-3 h-3 ml-0.5" />
+              </a>
+              {' '}&amp; Hammad.
+            </span>
           </div>
 
           <div className="flex items-center gap-4">

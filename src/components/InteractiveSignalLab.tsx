@@ -20,7 +20,8 @@ import {
   Gauge,
   Sparkles,
   RefreshCw,
-  Eye
+  Eye,
+  ExternalLink
 } from 'lucide-react';
 
 export type CircuitTopology = 
@@ -1970,6 +1971,29 @@ export const InteractiveSignalLab: React.FC = () => {
 
         </div>
 
+      </div>
+
+      {/* Studio Bottom Bar & Collaboration Attribution */}
+      <div className="mt-6 pt-4 border-t border-slate-200 dark:border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-mono text-slate-500 dark:text-slate-400">
+        <div className="flex items-center gap-2">
+          <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+          <span>Interactive ECE Circuit &amp; Waveform Studio · 14 Topologies</span>
+        </div>
+        <div className="flex items-center gap-1.5 text-center sm:text-right flex-wrap justify-center sm:justify-end">
+          <span className="font-semibold text-slate-800 dark:text-slate-200">Virtual Lab Studio</span>
+          <span className="text-slate-400">|</span>
+          <span>Designed &amp; Developed with ❤️ by</span>
+          <a
+            href="https://clickncreate.co.uk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-bold text-sky-600 dark:text-[#00f0ff] hover:underline inline-flex items-center gap-0.5 transition-colors group"
+          >
+            Saad
+            <ExternalLink className="w-3 h-3 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+          </a>
+          <span>&amp; Hammad.</span>
+        </div>
       </div>
 
     </div>
