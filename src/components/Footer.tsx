@@ -15,11 +15,21 @@ import { PERSONAL_INFO } from '../data/portfolioData';
 interface FooterProps {
   onOpenCV: () => void;
   onOpenHireMe: () => void;
+  onNavigate?: (page: string) => void;
 }
 
-export const Footer: React.FC<FooterProps> = ({ onOpenCV, onOpenHireMe }) => {
+export const Footer: React.FC<FooterProps> = ({ onOpenCV, onOpenHireMe, onNavigate }) => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleNav = (page: string) => {
+    if (onNavigate) {
+      onNavigate(page);
+    } else {
+      const el = document.getElementById(page);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
@@ -43,19 +53,19 @@ export const Footer: React.FC<FooterProps> = ({ onOpenCV, onOpenHireMe }) => {
             </div>
           </div>
 
-          {/* Col 2: Coursework & Labs */}
+          {/* Col 2: Coursework & Navigation */}
           <div className="md:col-span-4">
             <h4 className="text-xs font-bold font-mono uppercase tracking-wider text-slate-400 mb-3">
-              Coursework & Simulators
+              Portfolio Navigation
             </h4>
             <ul className="space-y-2 text-xs font-medium text-slate-600 dark:text-slate-400">
-              <li><a href="#about" className="hover:text-indigo-400">About Hammad Patel</a></li>
-              <li><a href="#portfolio" className="hover:text-indigo-400">Virtual Circuit & Waveform Studio</a></li>
-              <li><a href="#portfolio" className="hover:text-indigo-400">Web, Shopify & WordPress Platforms</a></li>
-              <li><a href="#coursework" className="hover:text-indigo-400">Complete Syllabus (Sem 1–7)</a></li>
-              <li><a href="#academics" className="hover:text-indigo-400">Academic Standing (6.38 CGPA till Sem 6)</a></li>
-              <li><a href="#skills" className="hover:text-indigo-400">Technical Skills & Competencies</a></li>
-              <li><a href="#hire-me" className="hover:text-indigo-400">Hire Me / Commission Work</a></li>
+              <li><button onClick={() => handleNav('home')} className="hover:text-indigo-400">Home · Overview</button></li>
+              <li><button onClick={() => handleNav('about')} className="hover:text-indigo-400">About Hammad Patel</button></li>
+              <li><button onClick={() => handleNav('portfolio')} className="hover:text-indigo-400">Portfolio &amp; Recent Works (hammadpatel.vercel.app)</button></li>
+              <li><button onClick={() => handleNav('coursework')} className="hover:text-indigo-400">GTU Coursework Syllabus (Sem 1–7)</button></li>
+              <li><button onClick={() => handleNav('skills')} className="hover:text-indigo-400">Skills &amp; Competencies</button></li>
+              <li><button onClick={() => handleNav('hire-me')} className="hover:text-indigo-400">Hire Me / ₹499/hr Estimator</button></li>
+              <li><button onClick={() => handleNav('contact')} className="hover:text-indigo-400">Contact &amp; WhatsApp</button></li>
             </ul>
           </div>
 
@@ -71,7 +81,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenCV, onOpenHireMe }) => {
                   className="w-full py-2.5 px-3.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 text-xs font-semibold hover:bg-slate-200 dark:hover:bg-slate-700 text-left transition-colors flex items-center justify-between"
                 >
                   <span>Inspect Official CV</span>
-                  <span className="text-[10px] font-mono text-indigo-400">PDF / TXT</span>
+                  <span className="text-[10px] font-mono text-indigo-400">PDF View & Download</span>
                 </button>
                 <button
                   onClick={onOpenHireMe}

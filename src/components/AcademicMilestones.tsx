@@ -16,7 +16,7 @@ export const AcademicMilestones: React.FC = () => {
   const activeSemData = ACADEMIC_SEMESTERS.find(s => s.semester === selectedSem) || ACADEMIC_SEMESTERS[5];
 
   return (
-    <section id="academics" className="py-24 relative bg-slate-900/40 border-y border-white/5">
+    <section id="milestones" className="py-24 relative bg-slate-100/50 dark:bg-slate-900/40 border-y border-slate-200 dark:border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

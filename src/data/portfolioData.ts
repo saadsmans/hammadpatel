@@ -444,21 +444,20 @@ export const LANGUAGES: LanguageSkill[] = [
 
 export const PROJECTS: Project[] = [
   {
-    id: "e-commerce-platform",
-    title: "Shopify & Custom React 19 Digital Storefront",
-    subtitle: "High-Performance E-Commerce & Liquid Engine",
+    id: "hammadpatel-portfolio",
+    title: "Hammad Patel Cyberpunk Portfolio & Engineering Workspace",
+    subtitle: "Production Web Architecture · Deployed on Vercel",
     category: "web",
-    description: "Full-featured e-commerce platform blending custom React 19 architecture with Shopify Liquid principles and WordPress WooCommerce capabilities. Features instant search, persistent cart state, responsive product galleries, and high-conversion checkout flows.",
-    longDescription: "Engineered to deliver commercial-grade speed and responsive versatility. Supports multiple product variant configurations, structured schema for Google Shopping rich snippets, microsecond cart updates, and mobile-first touch ergonomics.",
-    technologies: ["React 19", "Tailwind CSS", "Shopify Liquid", "TypeScript", "WordPress", "PHP"],
-    metrics: ["100% Mobile Responsive", "<1.1s First Contentful Paint", "Zero-lag Reactive Cart"],
-    features: ["Dynamic Variant Filtering", "Persistent State Cache", "Order Summary & Invoice Generator", "Light/Dark Adaptive"],
-    demoUrl: "#portfolio",
-    githubUrl: "https://github.com",
-    badge: "E-Commerce & Shopify",
-    imageAlt: "E-Commerce Web Platform Mockup"
+    description: "Official portfolio and technical workspace deployed live at hammadpatel.vercel.app. Engineered with high-contrast cyberpunk gaming aesthetics, interactive circuit and waveform simulation laboratory, interactive project price & hour estimator tailored for Indian markets, and full ECE academic coursework explorer.",
+    longDescription: "Built with responsive performance and modern cyberpunk neon contrasts. Integrates real-time CRT waveform oscilloscope synthesis via Web Audio API, dynamic Indian Rupee proposal builder with pre-encoded WhatsApp dispatch, and full 7-semester syllabus matrix.",
+    technologies: ["React 19", "Tailwind CSS", "TypeScript", "Three.js", "Web Audio API", "Vercel"],
+    metrics: ["Live at hammadpatel.vercel.app", "<1s Fast Load", "100% Mobile Responsive"],
+    features: ["Cyberpunk Gaming HUD", "Virtual Oscilloscope & Tone Synth", "Instant Indian Rupee Project Estimator", "Direct WhatsApp & Email Pipeline"],
+    demoUrl: "https://hammadpatel.vercel.app",
+    githubUrl: "https://hammadpatel.vercel.app",
+    badge: "Live on Vercel",
+    imageAlt: "Hammad Patel Cyberpunk Portfolio Platform"
   },
-
   {
     id: "circuit-waveform-studio",
     title: "Virtual Circuit & Waveform Studio",
@@ -473,21 +472,6 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://github.com",
     badge: "IIT Bombay Inspired",
     imageAlt: "Virtual Circuit Simulator"
-  },
-  {
-    id: "wordpress-custom-cms",
-    title: "Enterprise WordPress & Custom PHP Portal",
-    subtitle: "Bespoke Theme & Database Optimized Architecture",
-    category: "web",
-    description: "Tailored WordPress and PHP dynamic web platform featuring bespoke page templates, secure inquiry routing, custom post types, and speed-optimized relational database queries.",
-    longDescription: "Engineered for clients needing effortless editorial management without sacrificing frontend speed. Built with modular PHP hooks, responsive CSS, and clean schema-ready HTML structures.",
-    technologies: ["WordPress", "PHP", "Java", "Tailwind CSS", "MySQL", "REST API"],
-    metrics: ["95+ Google PageSpeed", "SEO Schema Validated", "Responsive on all screens"],
-    features: ["Custom Gutenberg Blocks", "Dynamic Inquiry Pipeline", "Asset Minification", "Automated XML Sitemaps"],
-    demoUrl: "#portfolio",
-    githubUrl: "https://github.com",
-    badge: "Full-Stack Web",
-    imageAlt: "WordPress PHP Platform"
   },
   {
     id: "seo-optimization-engine",

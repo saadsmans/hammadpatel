@@ -634,60 +634,60 @@ export const InteractiveSignalLab: React.FC = () => {
   };
 
   return (
-    <div className="rounded-3xl bg-slate-900 border border-white/10 shadow-2xl overflow-hidden p-6 sm:p-8">
+    <div className="rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-white/10 shadow-2xl overflow-hidden p-6 sm:p-8 text-slate-900 dark:text-slate-100">
       
       {/* Studio Header & Lab Presets */}
-      <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-white/10">
+      <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-slate-200 dark:border-white/10">
         <div>
-          <div className="flex items-center gap-2 text-xs font-mono font-bold text-indigo-400 uppercase tracking-wider mb-1">
-            <Activity className="w-4 h-4 text-cyan-400" />
+          <div className="flex items-center gap-2 text-xs font-mono font-bold text-sky-700 dark:text-indigo-400 uppercase tracking-wider mb-1">
+            <Activity className="w-4 h-4 text-sky-600 dark:text-cyan-400" />
             <span>Virtual Circuit & Dual-Trace Waveform Studio</span>
-            <span className="text-slate-500">·</span>
-            <span className="text-emerald-400">eSim & CircuitJS Inspired</span>
+            <span className="text-slate-400 dark:text-slate-500">·</span>
+            <span className="text-emerald-700 dark:text-emerald-400">eSim & CircuitJS Inspired</span>
           </div>
-          <h3 className="text-2xl sm:text-3xl font-extrabold font-display text-white">
+          <h3 className="text-2xl sm:text-3xl font-extrabold font-display text-slate-900 dark:text-white">
             Interactive Signal Laboratory & Oscilloscope
           </h3>
-          <p className="text-xs sm:text-sm text-slate-400 mt-1 max-w-2xl leading-relaxed">
+          <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-1 max-w-2xl leading-relaxed">
             Hands-on hardware simulation engine. Tune analog filter parameters, simulate bridge rectification, analyze op-amp saturation, inspect 555 astable clocks, and listen with the real Web Audio tone engine.
           </p>
         </div>
 
         {/* Quick Lab Presets (IIT Bombay & CircuitJS) */}
         <div className="flex flex-col sm:flex-row sm:items-center gap-2">
-          <span className="text-xs font-mono text-slate-400 shrink-0">Lab Presets:</span>
+          <span className="text-xs font-mono text-slate-500 dark:text-slate-400 shrink-0">Lab Presets:</span>
           <div className="flex flex-wrap gap-1.5 text-xs font-mono">
             <button
               onClick={() => applyPreset('rc-lowpass-audio')}
-              className="px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-white/5 transition-colors"
+              className="px-2.5 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 hover:text-slate-900 dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-slate-300 dark:hover:text-white border border-slate-200 dark:border-white/5 transition-colors"
               title="RC Low-Pass Filter at 1kHz Cutoff"
             >
               RC Low-Pass
             </button>
             <button
               onClick={() => applyPreset('rectifier-50hz')}
-              className="px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-white/5 transition-colors"
+              className="px-2.5 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 hover:text-slate-900 dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-slate-300 dark:hover:text-white border border-slate-200 dark:border-white/5 transition-colors"
               title="Full-wave bridge rectifier at 50Hz AC mains"
             >
               50Hz Rectifier
             </button>
             <button
               onClick={() => applyPreset('555-pwm')}
-              className="px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-white/5 transition-colors"
+              className="px-2.5 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 hover:text-slate-900 dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-slate-300 dark:hover:text-white border border-slate-200 dark:border-white/5 transition-colors"
               title="555 Timer Astable Multivibrator PWM clock"
             >
               555 Astable
             </button>
             <button
               onClick={() => applyPreset('opamp-saturation')}
-              className="px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-white/5 transition-colors"
+              className="px-2.5 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 hover:text-slate-900 dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-slate-300 dark:hover:text-white border border-slate-200 dark:border-white/5 transition-colors"
               title="Op-Amp Inverting Saturation at Rails"
             >
               Op-Amp Saturation
             </button>
             <button
               onClick={() => applyPreset('am-radio')}
-              className="px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-white/5 transition-colors"
+              className="px-2.5 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 hover:text-slate-900 dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-slate-300 dark:hover:text-white border border-slate-200 dark:border-white/5 transition-colors"
               title="AM Radio Waveform & Sideband Generation"
             >
               AM Modulator
@@ -698,7 +698,7 @@ export const InteractiveSignalLab: React.FC = () => {
 
       {/* Circuit Topology Selector Tabs */}
       <div className="my-6">
-        <span className="text-xs font-mono uppercase tracking-wider text-slate-400 block mb-2.5">
+        <span className="text-xs font-mono uppercase tracking-wider text-slate-500 dark:text-slate-400 block mb-2.5 font-semibold">
           Select Active Circuit Topology:
         </span>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
@@ -718,13 +718,13 @@ export const InteractiveSignalLab: React.FC = () => {
                 className={`p-3 rounded-2xl text-left transition-all border ${
                   isSelected
                     ? 'bg-gradient-to-br from-indigo-600 to-indigo-800 text-white border-indigo-400 shadow-lg shadow-indigo-600/30'
-                    : 'bg-slate-800/60 hover:bg-slate-800 text-slate-300 border-white/5'
+                    : 'bg-slate-50 hover:bg-slate-100 dark:bg-slate-800/60 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-white/5'
                 }`}
               >
                 <span className="text-xs font-bold font-display block leading-tight">
                   {tab.label}
                 </span>
-                <span className={`text-[10px] block mt-0.5 ${isSelected ? 'text-indigo-200' : 'text-slate-500'}`}>
+                <span className={`text-[10px] block mt-0.5 ${isSelected ? 'text-indigo-200' : 'text-slate-500 dark:text-slate-400'}`}>
                   {tab.sub}
                 </span>
               </button>
@@ -752,14 +752,14 @@ export const InteractiveSignalLab: React.FC = () => {
               <span>{isRunning ? 'FREEZE' : 'RUN'}</span>
             </button>
 
-            {/* Display Mode Dropdown */}
-            <div className="flex items-center gap-1 bg-slate-900 px-2 py-1 rounded-xl border border-white/10">
-              <span className="text-slate-400 text-[10px]">MODE:</span>
+            {/* Display Mode Selector (Responsive scroll on mobile) */}
+            <div className="flex items-center gap-1 bg-slate-900 px-2 py-1 rounded-xl border border-white/10 overflow-x-auto max-w-[200px] sm:max-w-none scrollbar-none">
+              <span className="text-slate-400 text-[10px] shrink-0">MODE:</span>
               {(['dual', 'ch1', 'ch2', 'xy-lissajous', 'math-diff'] as DisplayMode[]).map((m) => (
                 <button
                   key={m}
                   onClick={() => setDisplayMode(m)}
-                  className={`px-2 py-0.5 rounded-lg text-[10px] font-semibold transition-colors ${
+                  className={`px-2 py-0.5 rounded-lg text-[10px] font-semibold transition-colors shrink-0 ${
                     displayMode === m ? 'bg-indigo-600 text-white' : 'text-slate-400 hover:text-white'
                   }`}
                 >
@@ -838,25 +838,25 @@ export const InteractiveSignalLab: React.FC = () => {
         </div>
 
         {/* Scope Bottom Telemetry Strip */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-2 p-3 bg-slate-950 border-t border-white/10 text-xs font-mono">
-          <div className="p-2 rounded-xl bg-slate-900 border border-white/5">
-            <span className="text-slate-500 text-[10px] block">Vpp Amplitude:</span>
+        <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-2 p-3 bg-slate-900 dark:bg-slate-950 border-t border-slate-800 dark:border-white/10 text-xs font-mono">
+          <div className="p-2 rounded-xl bg-slate-800/80 dark:bg-slate-900 border border-slate-700/60 dark:border-white/5">
+            <span className="text-slate-400 dark:text-slate-500 text-[10px] block">Vpp Amplitude:</span>
             <span className="font-bold text-cyan-400">{calculations.vpp.toFixed(2)} V</span>
           </div>
-          <div className="p-2 rounded-xl bg-slate-900 border border-white/5">
-            <span className="text-slate-500 text-[10px] block">RMS Voltage:</span>
+          <div className="p-2 rounded-xl bg-slate-800/80 dark:bg-slate-900 border border-slate-700/60 dark:border-white/5">
+            <span className="text-slate-400 dark:text-slate-500 text-[10px] block">RMS Voltage:</span>
             <span className="font-bold text-cyan-300">{calculations.vrms.toFixed(2)} Vrms</span>
           </div>
-          <div className="p-2 rounded-xl bg-slate-900 border border-white/5">
-            <span className="text-slate-500 text-[10px] block">Signal Frequency:</span>
+          <div className="p-2 rounded-xl bg-slate-800/80 dark:bg-slate-900 border border-slate-700/60 dark:border-white/5">
+            <span className="text-slate-400 dark:text-slate-500 text-[10px] block">Signal Frequency:</span>
             <span className="font-bold text-emerald-400">{frequency} Hz</span>
           </div>
-          <div className="p-2 rounded-xl bg-slate-900 border border-white/5">
-            <span className="text-slate-500 text-[10px] block">Period (T = 1/f):</span>
+          <div className="p-2 rounded-xl bg-slate-800/80 dark:bg-slate-900 border border-slate-700/60 dark:border-white/5">
+            <span className="text-slate-400 dark:text-slate-500 text-[10px] block">Period (T = 1/f):</span>
             <span className="font-bold text-slate-200">{calculations.periodMs.toFixed(2)} ms</span>
           </div>
-          <div className="p-2 rounded-xl bg-slate-900 border border-white/5">
-            <span className="text-slate-500 text-[10px] block">
+          <div className="p-2 rounded-xl bg-slate-800/80 dark:bg-slate-900 border border-slate-700/60 dark:border-white/5">
+            <span className="text-slate-400 dark:text-slate-500 text-[10px] block">
               {topology === '555-timer' ? '555 Duty Cycle:' : topology === 'rectifier' ? 'Ripple Factor:' : 'Cutoff Freq (fc):'}
             </span>
             <span className="font-bold text-indigo-400">
@@ -867,8 +867,8 @@ export const InteractiveSignalLab: React.FC = () => {
                 : `${calculations.fc.toFixed(1)} Hz`}
             </span>
           </div>
-          <div className="p-2 rounded-xl bg-slate-900 border border-white/5">
-            <span className="text-slate-500 text-[10px] block">Phase Angle (Δϕ):</span>
+          <div className="p-2 rounded-xl bg-slate-800/80 dark:bg-slate-900 border border-slate-700/60 dark:border-white/5">
+            <span className="text-slate-400 dark:text-slate-500 text-[10px] block">Phase Angle (Δϕ):</span>
             <span className="font-bold text-amber-400">{calculations.phaseShiftDeg.toFixed(1)}°</span>
           </div>
         </div>
@@ -878,21 +878,21 @@ export const InteractiveSignalLab: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-8">
         
         {/* Left: Interactive Analog Circuit Controls */}
-        <div className="lg:col-span-7 space-y-6 p-6 rounded-2xl bg-slate-950/70 border border-white/10">
-          <div className="flex items-center justify-between border-b border-white/10 pb-3">
-            <h4 className="text-sm font-bold font-mono text-white flex items-center gap-2">
-              <Sliders className="w-4 h-4 text-indigo-400" />
+        <div className="lg:col-span-7 space-y-6 p-6 rounded-2xl bg-slate-50 dark:bg-slate-950/70 border border-slate-200 dark:border-white/10">
+          <div className="flex items-center justify-between border-b border-slate-200 dark:border-white/10 pb-3">
+            <h4 className="text-sm font-bold font-mono text-slate-900 dark:text-white flex items-center gap-2">
+              <Sliders className="w-4 h-4 text-indigo-500 dark:text-indigo-400" />
               Analog Signal Generator & Circuit Controls
             </h4>
-            <span className="text-[11px] font-mono text-cyan-400">GTU / IIT Bombay eSim Netlist</span>
+            <span className="text-[11px] font-mono text-sky-600 dark:text-cyan-400">GTU / IIT Bombay eSim Netlist</span>
           </div>
 
           {/* Row 1: Frequency & Amplitude Sliders */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <div>
               <div className="flex justify-between text-xs font-mono mb-1.5">
-                <span className="text-slate-400">Frequency (Hz):</span>
-                <span className="font-bold text-cyan-400">{frequency} Hz</span>
+                <span className="text-slate-600 dark:text-slate-400">Frequency (Hz):</span>
+                <span className="font-bold text-sky-600 dark:text-cyan-400">{frequency} Hz</span>
               </div>
               <input
                 type="range"
@@ -901,9 +901,9 @@ export const InteractiveSignalLab: React.FC = () => {
                 step="10"
                 value={frequency}
                 onChange={(e) => setFrequency(Number(e.target.value))}
-                className="w-full accent-cyan-400 h-1.5 rounded-lg bg-slate-800 cursor-pointer"
+                className="w-full accent-cyan-500 h-1.5 rounded-lg bg-slate-200 dark:bg-slate-800 cursor-pointer"
               />
-              <div className="flex justify-between text-[10px] font-mono text-slate-500 mt-1">
+              <div className="flex justify-between text-[10px] font-mono text-slate-400 dark:text-slate-500 mt-1">
                 <span>20 Hz</span>
                 <span>1 kHz</span>
                 <span>5 kHz</span>
@@ -912,8 +912,8 @@ export const InteractiveSignalLab: React.FC = () => {
 
             <div>
               <div className="flex justify-between text-xs font-mono mb-1.5">
-                <span className="text-slate-400">Input Amplitude (Vpeak):</span>
-                <span className="font-bold text-cyan-400">{amplitude.toFixed(1)} V</span>
+                <span className="text-slate-600 dark:text-slate-400">Input Amplitude (Vpeak):</span>
+                <span className="font-bold text-sky-600 dark:text-cyan-400">{amplitude.toFixed(1)} V</span>
               </div>
               <input
                 type="range"
@@ -922,9 +922,9 @@ export const InteractiveSignalLab: React.FC = () => {
                 step="0.1"
                 value={amplitude}
                 onChange={(e) => setAmplitude(Number(e.target.value))}
-                className="w-full accent-cyan-400 h-1.5 rounded-lg bg-slate-800 cursor-pointer"
+                className="w-full accent-cyan-500 h-1.5 rounded-lg bg-slate-200 dark:bg-slate-800 cursor-pointer"
               />
-              <div className="flex justify-between text-[10px] font-mono text-slate-500 mt-1">
+              <div className="flex justify-between text-[10px] font-mono text-slate-400 dark:text-slate-500 mt-1">
                 <span>0.5 V</span>
                 <span>3.3 V</span>
                 <span>5.0 V</span>
@@ -934,7 +934,7 @@ export const InteractiveSignalLab: React.FC = () => {
 
           {/* Row 2: Waveform Type Selector */}
           <div>
-            <span className="text-xs font-mono text-slate-400 block mb-2">Input Function Generator Waveform:</span>
+            <span className="text-xs font-mono text-slate-600 dark:text-slate-400 block mb-2 font-semibold">Input Function Generator Waveform:</span>
             <div className="grid grid-cols-4 gap-2 text-xs font-mono">
               {(['sine', 'square', 'triangle', 'sawtooth'] as WaveformType[]).map((w) => (
                 <button
@@ -942,8 +942,8 @@ export const InteractiveSignalLab: React.FC = () => {
                   onClick={() => setWaveType(w)}
                   className={`py-2 px-3 rounded-xl uppercase font-bold text-center transition-all border ${
                     waveType === w
-                      ? 'bg-cyan-500/20 text-cyan-300 border-cyan-400 shadow-sm'
-                      : 'bg-slate-900 text-slate-400 hover:text-white border-white/5'
+                      ? 'bg-sky-500/15 dark:bg-cyan-500/20 text-sky-700 dark:text-cyan-300 border-sky-400 dark:border-cyan-400 shadow-sm'
+                      : 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white border-slate-200 dark:border-white/5'
                   }`}
                 >
                   {w}
@@ -1184,13 +1184,13 @@ export const InteractiveSignalLab: React.FC = () => {
         <div className="lg:col-span-5 space-y-6">
           
           {/* Schematic Box */}
-          <div className="p-6 rounded-2xl bg-slate-950/70 border border-white/10 flex flex-col justify-between">
-            <div className="flex items-center justify-between pb-3 border-b border-white/10 mb-4">
-              <span className="text-xs font-mono font-bold text-indigo-400 uppercase tracking-wider flex items-center gap-1.5">
-                <Cpu className="w-4 h-4 text-cyan-400" />
+          <div className="p-6 rounded-2xl bg-slate-50 dark:bg-slate-950/70 border border-slate-200 dark:border-white/10 flex flex-col justify-between">
+            <div className="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-white/10 mb-4">
+              <span className="text-xs font-mono font-bold text-sky-700 dark:text-indigo-400 uppercase tracking-wider flex items-center gap-1.5">
+                <Cpu className="w-4 h-4 text-sky-600 dark:text-cyan-400" />
                 Live Circuit Schematic
               </span>
-              <span className="text-[10px] font-mono text-emerald-400">Node Simulation</span>
+              <span className="text-[10px] font-mono text-emerald-700 dark:text-emerald-400 font-bold">Node Simulation</span>
             </div>
 
             {/* Visual SVG Schematic Diagram */}
@@ -1338,51 +1338,51 @@ export const InteractiveSignalLab: React.FC = () => {
             </div>
 
             {/* Circuit Equations Description */}
-            <div className="mt-4 pt-3 border-t border-white/10 text-xs font-mono text-slate-300 space-y-1.5">
+            <div className="mt-4 pt-3 border-t border-slate-200 dark:border-white/10 text-xs font-mono text-slate-700 dark:text-slate-300 space-y-1.5">
               {topology === 'rc-lowpass' && (
                 <>
-                  <div className="text-cyan-400 font-bold">Transfer Function: H(s) = 1 / (1 + sRC)</div>
-                  <div className="text-slate-400 text-[11px]">
-                    Cutoff: fc = 1 / (2πRC) = <strong className="text-white">{calculations.fc.toFixed(1)} Hz</strong>. Phase lag approaches -90° at high frequencies.
+                  <div className="text-sky-700 dark:text-cyan-400 font-bold">Transfer Function: H(s) = 1 / (1 + sRC)</div>
+                  <div className="text-slate-500 dark:text-slate-400 text-[11px]">
+                    Cutoff: fc = 1 / (2πRC) = <strong className="text-slate-900 dark:text-white">{calculations.fc.toFixed(1)} Hz</strong>. Phase lag approaches -90° at high frequencies.
                   </div>
                 </>
               )}
               {topology === 'rc-highpass' && (
                 <>
-                  <div className="text-cyan-400 font-bold">Transfer Function: H(s) = sRC / (1 + sRC)</div>
-                  <div className="text-slate-400 text-[11px]">
+                  <div className="text-sky-700 dark:text-cyan-400 font-bold">Transfer Function: H(s) = sRC / (1 + sRC)</div>
+                  <div className="text-slate-500 dark:text-slate-400 text-[11px]">
                     Passes signals where f &gt; fc. Phase lead of +90° at DC decaying to 0° in passband.
                   </div>
                 </>
               )}
               {topology === 'rectifier' && (
                 <>
-                  <div className="text-amber-400 font-bold">Graetz Full-Wave Bridge + Capacitor Filter</div>
-                  <div className="text-slate-400 text-[11px]">
+                  <div className="text-amber-700 dark:text-amber-400 font-bold">Graetz Full-Wave Bridge + Capacitor Filter</div>
+                  <div className="text-slate-500 dark:text-slate-400 text-[11px]">
                     Peak DC output = Vm - 2*Vd (1.4V drop). Ripple factor r = 1 / (4√3 * f * RL * C).
                   </div>
                 </>
               )}
               {topology === 'op-amp' && (
                 <>
-                  <div className="text-purple-400 font-bold">Closed-Loop Gain: Av = -Rf / Rin</div>
-                  <div className="text-slate-400 text-[11px]">
+                  <div className="text-purple-700 dark:text-purple-400 font-bold">Closed-Loop Gain: Av = -Rf / Rin</div>
+                  <div className="text-slate-500 dark:text-slate-400 text-[11px]">
                     Inverts signal by 180° with virtual ground at inverting node. Clips symmetrically at ±4.5V supply rails.
                   </div>
                 </>
               )}
               {topology === '555-timer' && (
                 <>
-                  <div className="text-cyan-400 font-bold">Frequency: f = 1.44 / [(Ra + 2Rb) * C]</div>
-                  <div className="text-slate-400 text-[11px]">
+                  <div className="text-sky-700 dark:text-cyan-400 font-bold">Frequency: f = 1.44 / [(Ra + 2Rb) * C]</div>
+                  <div className="text-slate-500 dark:text-slate-400 text-[11px]">
                     Duty cycle: D = (Ra + Rb) / (Ra + 2Rb). Cap charges between 1/3 Vcc and 2/3 Vcc threshold.
                   </div>
                 </>
               )}
               {topology === 'am-mod' && (
                 <>
-                  <div className="text-cyan-400 font-bold">AM Equation: s(t) = [1 + m*m(t)] * c(t)</div>
-                  <div className="text-slate-400 text-[11px]">
+                  <div className="text-sky-700 dark:text-cyan-400 font-bold">AM Equation: s(t) = [1 + m*m(t)] * c(t)</div>
+                  <div className="text-slate-500 dark:text-slate-400 text-[11px]">
                     Creates upper (fc + fm) and lower (fc - fm) sidebands. Modulation depth controlled by index m.
                   </div>
                 </>
@@ -1391,13 +1391,13 @@ export const InteractiveSignalLab: React.FC = () => {
           </div>
 
           {/* Academic & Practical Relevance Card */}
-          <div className="p-5 rounded-2xl bg-gradient-to-br from-indigo-950/60 via-slate-900 to-black border border-indigo-500/20 text-xs font-mono space-y-2">
-            <div className="flex items-center gap-2 text-indigo-400 font-bold uppercase text-[11px]">
+          <div className="p-5 rounded-2xl bg-indigo-50/80 dark:bg-gradient-to-br dark:from-indigo-950/60 dark:via-slate-900 dark:to-black border border-indigo-200 dark:border-indigo-500/20 text-xs font-mono space-y-2">
+            <div className="flex items-center gap-2 text-indigo-700 dark:text-indigo-400 font-bold uppercase text-[11px]">
               <Sparkles className="w-3.5 h-3.5" />
               <span>IIT Bombay Spoken Tutorial Methodology</span>
             </div>
-            <p className="text-slate-300 text-[11px] leading-relaxed">
-              This digital lab directly translates my academic internship with IIT Bombay on <strong className="text-white">eSim and CircuitJS</strong>. By modeling differential equations, Kirchhoff laws, and Fourier spectral harmonics, it bridges theoretical communication engineering with high-performance WebGL & Canvas browser graphics.
+            <p className="text-slate-700 dark:text-slate-300 text-[11px] leading-relaxed">
+              This digital lab directly translates my academic internship with IIT Bombay on <strong className="text-slate-900 dark:text-white">eSim and CircuitJS</strong>. By modeling differential equations, Kirchhoff laws, and Fourier spectral harmonics, it bridges theoretical communication engineering with high-performance WebGL & Canvas browser graphics.
             </p>
           </div>
 

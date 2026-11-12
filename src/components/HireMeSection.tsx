@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { PERSONAL_INFO, HIRE_ME_SERVICES } from '../data/portfolioData';
+import { ProjectEstimator } from './ProjectEstimator';
 
 export const HireMeSection: React.FC = () => {
   const [selectedService, setSelectedService] = useState<string>('wordpress-website');
@@ -70,90 +71,45 @@ export const HireMeSection: React.FC = () => {
   )}`;
 
   return (
-    <section id="hire-me" className="py-24 relative bg-slate-900/60 border-t border-white/5">
+    <section id="hire-me" className="py-20 sm:py-24 relative bg-slate-50 dark:bg-[#04060c] border-t border-slate-200 dark:border-[#00f0ff]/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="flex flex-col items-center text-center mb-14">
-          <div className="inline-flex items-center gap-2 text-xs font-mono font-semibold tracking-wider text-indigo-400 uppercase mb-3">
-            <Briefcase className="w-4 h-4 text-indigo-400" />
-            Website Creation & Client Engagements
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-50 dark:bg-[#00f0ff]/10 border border-sky-300 dark:border-[#00f0ff]/30 text-xs font-mono font-bold tracking-wider text-sky-700 dark:text-[#00f0ff] uppercase mb-3 shadow-sm dark:shadow-[0_0_12px_rgba(0,240,255,0.2)]">
+            <Briefcase className="w-4 h-4 text-sky-600 dark:text-[#00f0ff]" />
+            <span>[// COMMERCIAL PROPOSALS · FAIR INDIAN MARKET PRICING]</span>
           </div>
-          <h2 className="text-3xl sm:text-5xl font-extrabold font-display tracking-tight text-slate-900 dark:text-white">
-            Hire Hammad Patel
+          <h2 className="text-3xl sm:text-5xl font-black font-display tracking-tight text-slate-900 dark:text-white uppercase leading-tight">
+            HIRE{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-indigo-600 to-rose-600 dark:from-[#00f0ff] dark:via-[#38bdf8] dark:to-[#ff0055] dark:neon-cyan-glow">
+              HAMMAD PATEL
+            </span>
           </h2>
-          <p className="mt-3 text-slate-600 dark:text-slate-400 max-w-2xl text-sm sm:text-base">
+          <p className="mt-3 text-slate-600 dark:text-slate-300 max-w-2xl text-xs sm:text-sm font-cyber leading-relaxed">
             Professional WordPress website making, high-converting Shopify e-commerce store setups, visual website builders, and search engine optimization.
           </p>
         </div>
 
-        {/* Services Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          {HIRE_ME_SERVICES.map((service) => {
-            const isSelected = selectedService === service.id;
-            return (
-              <div
-                key={service.id}
-                onClick={() => setSelectedService(service.id)}
-                className={`p-6 rounded-3xl border transition-all cursor-pointer flex flex-col justify-between ${
-                  isSelected
-                    ? 'bg-white dark:bg-slate-900 border-indigo-500 shadow-2xl ring-2 ring-indigo-500/20'
-                    : 'bg-white/70 dark:bg-slate-900/60 border-slate-200 dark:border-white/5 hover:border-slate-300 dark:hover:border-white/20'
-                }`}
-              >
-                <div>
-                  <div className="flex items-center justify-between mb-3 text-xs font-mono">
-                    <span className="text-indigo-600 dark:text-indigo-400 font-bold uppercase">
-                      {service.turnaround}
-                    </span>
-                    {isSelected && (
-                      <span className="w-5 h-5 rounded-full bg-indigo-600 text-white flex items-center justify-center text-xs">
-                        <Check className="w-3 h-3" />
-                      </span>
-                    )}
-                  </div>
-
-                  <h3 className="text-lg font-bold font-display text-slate-900 dark:text-white mb-1">
-                    {service.title}
-                  </h3>
-                  
-                  <p className="text-xs text-slate-500 dark:text-slate-400 mb-4">
-                    {service.tagline}
-                  </p>
-
-                  <ul className="space-y-2 mb-6">
-                    {service.features.map((f, i) => (
-                      <li key={i} className="flex items-start gap-2 text-xs text-slate-700 dark:text-slate-300">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0 mt-0.5" />
-                        <span>{f}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="pt-4 border-t border-slate-100 dark:border-white/5 flex items-center justify-between text-xs font-semibold">
-                  <span className="text-slate-500 font-mono">{service.startingPrice}</span>
-                  <span className="text-indigo-600 dark:text-indigo-400">Select Service →</span>
-                </div>
-              </div>
-            );
-          })}
+        {/* Interactive Price & Hour Estimator (Matching Indian Market Reference) */}
+        <div className="mb-16">
+          <ProjectEstimator />
         </div>
 
-        {/* Interactive Scope & Instant Proposal Builder */}
-        <div className="rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-white/10 p-6 sm:p-10 shadow-2xl">
+        {/* Direct Contact & Custom Inquiry Form */}
+        <div className="cyber-bracket rounded-3xl cyber-card p-6 sm:p-10 shadow-2xl">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
             
             {/* Left Column: Direct Contacts */}
             <div className="lg:col-span-5 flex flex-col justify-between">
               <div>
-                <span className="text-xs font-mono font-bold uppercase text-indigo-500 dark:text-indigo-400 tracking-wider">
-                  Direct Line & Verification
+                <span className="text-xs font-mono font-bold uppercase text-sky-700 dark:text-[#00f0ff] tracking-wider block mb-1">
+                  DIRECT LINE & PROPOSAL VERIFICATION
                 </span>
-                <h3 className="text-2xl font-bold font-display text-slate-900 dark:text-white mt-1 mb-3">
+                <h3 className="text-xl sm:text-2xl font-black font-display text-slate-900 dark:text-white mb-3">
                   Let&apos;s Build Something Extraordinary
                 </h3>
-                <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                <p className="text-sm font-cyber text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
                   Whether you need a complete WordPress website, a high-converting Shopify online store, or visual website design on Framer or Wix, I deliver polished design, clean layouts, and reliable turnaround.
                 </p>
 
