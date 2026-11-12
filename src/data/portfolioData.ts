@@ -446,16 +446,16 @@ export const PROJECTS: Project[] = [
     title: "Virtual Circuit & Waveform Studio (Advanced ECE Lab)",
     subtitle: "Real-Time Interactive SPICE & Signal Synthesis Engineering Platform",
     category: "ece",
-    description: "Advanced web-based electronic circuit simulation laboratory inspired by IIT Bombay Spoken Tutorial learnings. Features real-time CRT dual-trace oscilloscope, 8 circuit topologies (RLC resonance, active Butterworth filters, Wien bridge oscillators, diode clippers, AM modulation), cursor voltage/time measurement delta, Bode magnitude & phase frequency response plot, harmonic FFT spectrum analyzer, and Web Audio tone synthesizer.",
+    description: "Advanced web-based electronic circuit simulation laboratory inspired by IIT Bombay Spoken Tutorial learnings. Features real-time CRT dual-trace oscilloscope, 14 active circuit topologies (RLC resonance, passive/active filters, 555 timers, AM/FM modulation, QPSK constellation, VLSI CMOS, DC-DC Buck converter, radar echo & DSP filters), cursor delta measurement, dynamic Bode plot, and Web Audio acoustic synthesis.",
     longDescription: "Engineered to simulate non-linear differential analog behaviors in real-time in the browser. Users can adjust frequency, amplitude, resistance, capacitance, and inductance while observing instantaneous AC/DC transient responses, phase shifts, cut-off resonance peaks, and audio frequency acoustic synthesis.",
     technologies: ["CircuitJS Logic", "eSim / Ngspice", "Bode Frequency Response", "Web Audio API", "HTML5 Canvas CRT Engine", "React 19", "TypeScript", "Tailwind CSS"],
-    metrics: ["60 FPS Phosphor Trace", "8 Circuit Topologies", "Bode & FFT Analysis", "Interactive Scope Cursors"],
+    metrics: ["60 FPS Phosphor Trace", "14 Circuit Topologies", "Bode & FFT Analysis", "Interactive Scope Cursors"],
     features: [
-      "8 Interactive Topologies: RC Low/High-Pass, RLC Band-Pass Resonance, Active Op-Amp Filter, Diode Bridge Rectifier, 555 Astable PWM, Wien Bridge Sine Oscillator & AM Modulator",
+      "14 Interactive Topologies: RC Low/High-Pass, RLC Resonance, Bridge Rectifier, Op-Amp, 555 Timer, Wien Bridge, AM/FM Modulation, QPSK Keying, CMOS Inverter, Buck Converter, Radar Doppler & DSP Filter",
       "Dual-Channel Time-Domain CRT Scope with P31 Green, Cyan & Amber Phosphor Glow",
       "Interactive Cursors for Precision Voltage Delta (ΔV) & Time Interval (Δt) Readouts",
       "Dynamic Bode Plot for Logarithmic Frequency Magnitude (dB) & Phase Shift (Degrees)",
-      "High-Resolution PNG Oscilloscope & Bode Plot Snapshot Export",
+      "Radar PPI Sweep Display & Digital I/Q Constellation Phasor Plane",
       "Full Web Audio Tone Synthesizer with Live Frequency Synchronization"
     ],
     demoUrl: "#portfolio",
@@ -464,24 +464,25 @@ export const PROJECTS: Project[] = [
     imageAlt: "Advanced Virtual Circuit & Waveform Studio"
   },
   {
-    id: "rf-satellite-link-calculator",
-    title: "Satellite Communication & Radar Link Analyzer",
-    subtitle: "GTU Semester 6 & 7 ECE Academic Computing Suite",
-    category: "ece",
-    description: "Analytical computation tool for satellite uplink/downlink link budgets, carrier-to-noise density ratio (C/N0), free-space path loss (FSPL), G/T figure of merit, and radar range detection equations for pulse & Doppler systems.",
-    longDescription: "Formulated using theoretical principles from GTU Semester 6 Satellite Communication and Semester 7 Radar & Navigation Aids (RNA). Models transponder EIRP, atmospheric attenuation, parabolic antenna beamwidth, and Doppler frequency velocity tracking.",
-    technologies: ["Python", "SciPy", "RF Physics Equations", "React 19", "TypeScript", "Mathematical Modeling"],
-    metrics: ["Sub-dB Link Precision", "Doppler Velocity Radar", "GTU Syllabus Aligned"],
+    id: "personal-portfolio-platform",
+    title: "Personal Engineering Portfolio Website (Recent Work)",
+    subtitle: "Interactive Engineering Showcase & Academic Web Platform",
+    category: "web",
+    description: "Designed and engineered an interactive personal portfolio website showcasing core ECE academic credentials, IIT Bombay Spoken Tutorial practical training, and web development skills. Features real-time CRT circuit simulation, full GTU syllabus explorer, and client-side PDF CV generation.",
+    longDescription: "Architected a high-performance web platform combining Electronics & Communication Engineering fundamentals with modern web development. Built with React 19, TypeScript, Tailwind CSS, HTML5 Canvas, and Web Audio API, featuring mobile-first responsive architecture and client-side PDF export.",
+    technologies: ["React 19", "TypeScript", "Tailwind CSS", "HTML5 Canvas", "Vite", "jsPDF"],
+    metrics: ["100% Mobile Responsive", "Client-Side PDF Generator", "Interactive Lab Engine", "Fast Load Speed"],
     features: [
-      "Uplink & Downlink Free Space Path Loss (FSPL) and Atmospheric Attenuation",
-      "Earth Station G/T Ratio & Transponder Effective Isotropic Radiated Power (EIRP)",
-      "Radar Range Equation Solver for Target Cross Section (RCS) & Detection Thresholds",
-      "Doppler Shift Frequency to Target Radial Velocity Transformation"
+      "Responsive Dark & Cyberpunk Design System with Poppins & Orbitron Typography",
+      "Integrated Virtual Circuit & Waveform Studio with 14 Active Topologies",
+      "Direct In-Browser PDF CV Viewer & Downloader powered by jsPDF",
+      "Interactive 7-Semester GTU ECE Coursework Explorer & Academic Milestones",
+      "Optimized Mobile Navigation with Touch Controls & Dynamic Route Tabs"
     ],
-    demoUrl: "#coursework",
+    demoUrl: "#home",
     githubUrl: "https://github.com",
-    badge: "Core ECE Engineering",
-    imageAlt: "Satellite & Radar Link Analyzer"
+    badge: "Recent Work / Featured Project",
+    imageAlt: "Hammad Patel Portfolio Website"
   }
 ];
 
