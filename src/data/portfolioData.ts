@@ -9,7 +9,7 @@ export const IMAGES = {
 
 export const PERSONAL_INFO = {
   name: "HAMMAD PATEL",
-  tagline: "Electronics & Communication Engineering Student | WordPress & Shopify Website Specialist",
+  tagline: "Electronics & Communication Engineering Student | ECE Systems & Web Development Enthusiast",
   email: "patelhammad132@gmail.com",
   phone: "+91 99747 61355",
   location: "Bharuch, Gujarat, India",
@@ -18,10 +18,10 @@ export const PERSONAL_INFO = {
   academicDuration: "2023 – 2027",
   currentSem: "Entering Semester 7 (Winter 2026) · Final Year",
   cgpaTillSem6: 6.38,
-  summary: "Motivated and enthusiastic Electronics & Communication Engineering student with an interest in communication technologies, satellite communication, and modern website creation. Specializes in designing and building high-performance websites through WordPress and Shopify, creating responsive business websites, e-commerce stores, and custom CMS layouts. Possesses strong analytical thinking, adaptability, and experience in electronic circuit simulation through the IIT Bombay Spoken Tutorial Project.",
+  summary: "Motivated and analytical Electronics & Communication Engineering student at Government Engineering College, Bharuch (6.38 CGPA till Sem 6) with strong foundations in RF & Satellite Communication, VLSI Design, Digital Signal Processing (DSP), Radar Systems, and Electronic Circuit Simulation (CircuitJS & eSim via IIT Bombay Spoken Tutorial Internship), complemented by modern Web Development and Programming skills in Java, Python, and C.",
   github: "https://github.com",
   linkedin: "https://linkedin.com",
-  whatsapp: "https://wa.me/919974761355?text=Hello%20Hammad,%20I%20would%20like%20to%20discuss%20a%20WordPress%20or%20Shopify%20website%20project!",
+  whatsapp: "https://wa.me/919974761355?text=Hello%20Hammad,%20I%20would%20like%20to%20connect%20regarding%20an%20Electronics%20%26%20Communication%20Engineering%20opportunity!",
 };
 
 export const ACADEMIC_SEMESTERS: AcademicSemester[] = [
@@ -385,166 +385,161 @@ export const IIT_BOMBAY_INTERNSHIP = {
 
 export const SKILL_CATEGORIES: SkillCategory[] = [
   {
-    title: "WordPress, Shopify & Website Platforms",
-    iconName: "Globe",
-    description: "Specialized in creating modern, high-converting websites through WordPress, Shopify, and visual website builders.",
-    skills: [
-      { name: "WordPress Website Making", level: 96, experience: "Complete website creation, theme customization, Elementor, Gutenberg & speed tuning", highlight: true },
-      { name: "Shopify Website Making", level: 94, experience: "End-to-end Shopify store setup, product variants, collection management & checkout", highlight: true },
-      { name: "Website Builders (Framer, Webflow, Wix)", level: 90, experience: "Modern landing page design, visual site builders & client-ready delivery", highlight: true },
-      { name: "WooCommerce E-Commerce", level: 92, experience: "Online store setup, payment gateways, product catalogs & order management", highlight: true },
-      { name: "Responsive UI/UX & Web Design", level: 95, experience: "Mobile-first layouts, typography hierarchy & clean user interfaces", highlight: true },
-      { name: "Technical SEO & Speed Optimization", level: 90, experience: "Google Search Console, meta tags, image compression & fast loading times" },
-      { name: "HTML & CSS Customization", level: 92, experience: "Visual styling adjustments, responsive CSS tweaks & custom layout enhancements" }
-    ]
-  },
-  {
-    title: "Programming Languages & Computing",
-    iconName: "Code2",
-    description: "Core computer science fundamentals, object-oriented design, scientific algorithms, and AI.",
-    skills: [
-      { name: "Java (Core & OOP)", level: 86, experience: "Object-oriented architecture, data structures, algorithms & multithreading", highlight: true },
-      { name: "Python Programming", level: 88, experience: "NumPy, SciPy, scientific computing, AI algorithms & automated signal scripts", highlight: true },
-      { name: "C Programming", level: 85, experience: "Memory pointers, data structures, embedded firmware logic & performance" },
-      { name: "Computer Networks & Protocols", level: 86, experience: "TCP/IP, OSI layers, routing protocols (OSPF, BGP) & HTTP/REST APIs" },
-      { name: "Artificial Intelligence (AI)", level: 82, experience: "Heuristic search, machine learning models & data classification" }
-    ]
-  },
-  {
-    title: "Electronics & Communication Systems",
+    title: "Electronics & Communication Systems (Core ECE)",
     iconName: "Radio",
-    description: "Hardware modeling, RF communications, radar systems, satellite links, and DSP.",
+    description: "RF engineering, satellite link design, radar systems, digital signal processing, and circuit simulation.",
     skills: [
-      { name: "Satellite Communication", level: 90, experience: "Link budget calculation, orbital mechanics, transponders & earth station design", highlight: true },
-      { name: "Radar & Navigation Aids (RNA)", level: 85, experience: "Radar range equation, Doppler frequency shift, pulsed radar & target tracking", highlight: true },
-      { name: "CircuitJS & eSim Simulation", level: 94, experience: "Real-time schematic capture, Ngspice netlist execution & transient analysis", highlight: true },
-      { name: "Antennas & Propagation", level: 86, experience: "Radiation patterns, beamwidth, directivity, antenna arrays & atmospheric fading", highlight: true },
-      { name: "Digital Signal Processing (DSP)", level: 85, experience: "FFT, DFT, FIR & IIR filter design, convolution & spectral analysis", highlight: true },
-      { name: "Wireless Communication & WSN", level: 84, experience: "Cellular radio propagation, fading channels, OFDM, 5G & sensor networks" }
+      { name: "CircuitJS & eSim SPICE Simulation", level: 94, experience: "Real-time schematic capture, Ngspice netlist execution & transient waveform analysis (IIT Bombay)", highlight: true },
+      { name: "Satellite Communication Systems", level: 90, experience: "Link budget calculation, orbital mechanics, transponders & earth station architecture", highlight: true },
+      { name: "Radar & Navigation Aids (RNA)", level: 88, experience: "Radar range equation, Doppler frequency shift, MTI/pulsed radar & target tracking", highlight: true },
+      { name: "Antennas & Wave Propagation", level: 87, experience: "Radiation patterns, dipole arrays, beamwidth, directivity & atmospheric propagation", highlight: true },
+      { name: "Digital Signal Processing (DSP)", level: 86, experience: "FFT, DFT, FIR & IIR filter design, Z-transforms & spectral waveform analysis", highlight: true },
+      { name: "Wireless Communication & WSN", level: 85, experience: "Cellular radio propagation, fading channels, OFDM, 5G & low-power sensor networks", highlight: true }
     ]
   },
   {
-    title: "Digital Tools & Growth Engineering",
+    title: "VLSI, Embedded Systems & Hardware Design",
     iconName: "Cpu",
-    description: "Productivity accelerators, technical SEO architecture, and business productivity.",
+    description: "Semiconductor physics, CMOS VLSI layout, microcontrollers, and optical communication hardware.",
     skills: [
-      { name: "Technical SEO & Schema.org", level: 90, experience: "Core Web Vitals, JSON-LD structured data, meta optimization & Lighthouse 95+", highlight: true },
-      { name: "AI Tools & Accelerated Workflows", level: 92, experience: "AI code reviews, prompt engineering, automated testing & documentation synthesis", highlight: true },
-      { name: "Microsoft Office Suite", level: 94, experience: "Advanced Excel modeling, technical Word reporting & executive PowerPoint decks" },
-      { name: "Git & GitHub Collaboration", level: 88, experience: "Branching workflows, code reviews, version control & open-source tools" }
+      { name: "VLSI Technology & CMOS Design", level: 86, experience: "MOSFET fabrication, CMOS inverter delay, stick diagrams, DRC/LVS & RTL logic", highlight: true },
+      { name: "Microcontrollers & Interfacing (8051 / ARM)", level: 88, experience: "Assembly & Embedded C programming, UART/SPI/I2C protocols & sensor interfacing", highlight: true },
+      { name: "Fiber Optic Communication", level: 87, experience: "Optical waveguiding, WDM, PIN/APD photodetectors, laser diodes & link power budgets", highlight: true },
+      { name: "Microwave Theory & Techniques (MTT)", level: 84, experience: "Transmission lines, Smith chart impedance matching, waveguides & S-parameters", highlight: true },
+      { name: "Analog & Digital Electronics", level: 92, experience: "Op-Amp signal conditioning, BJT/MOSFET amplifiers, combinational & sequential logic", highlight: true }
+    ]
+  },
+  {
+    title: "Programming Languages & Scientific Computing",
+    iconName: "Code2",
+    description: "Core programming languages, algorithmic problem-solving, network protocols, and AI.",
+    skills: [
+      { name: "Python Programming", level: 88, experience: "NumPy, SciPy, scientific computing, AI search models & automated signal scripts", highlight: true },
+      { name: "Java (Core & OOP)", level: 86, experience: "Object-oriented design, data structures, algorithms & modular application logic", highlight: true },
+      { name: "C & Embedded C", level: 86, experience: "Memory pointers, register-level firmware logic, data structures & numerical routines", highlight: true },
+      { name: "Computer Networks & Protocols", level: 86, experience: "TCP/IP, OSI stack, routing protocols (OSPF, BGP), socket communication & telemetry" },
+      { name: "Artificial Intelligence (AI)", level: 82, experience: "Heuristic search (A*, Minimax), machine learning fundamentals & pattern recognition" }
+    ]
+  },
+  {
+    title: "Web Development & Engineering Tools",
+    iconName: "Globe",
+    description: "Modern web development skills for technical interfaces, simulation dashboards, and web platforms.",
+    skills: [
+      { name: "Frontend Web Development (HTML5, CSS3, JS/TS)", level: 92, experience: "Interactive engineering dashboards, responsive UI layouts & modern web standards", highlight: true },
+      { name: "React & Tailwind CSS Architecture", level: 90, experience: "Component-based interfaces, real-time HTML5 Canvas oscilloscopes & dark/light themes", highlight: true },
+      { name: "CMS & Web Platforms (WordPress, Shopify)", level: 92, experience: "Full web platform configuration, custom layouts, responsive structures & SEO", highlight: true },
+      { name: "Git, GitHub & Technical Documentation", level: 88, experience: "Version control workflows, LaTeX/Office lab reports & engineering documentation" }
     ]
   }
 ];
 
 export const LANGUAGES: LanguageSkill[] = [
-  { name: "English", proficiency: "Professional", levelPercentage: 88, badge: "Technical documentation & global communication" },
+  { name: "English", proficiency: "Professional", levelPercentage: 88, badge: "Technical documentation & engineering communication" },
   { name: "Hindi", proficiency: "Fluent", levelPercentage: 96, badge: "Conversational & technical fluency" },
   { name: "Gujarati", proficiency: "Native", levelPercentage: 100, badge: "Mother tongue & native language proficiency" }
 ];
 
 export const PROJECTS: Project[] = [
   {
-    id: "hammadpatel-portfolio",
-    title: "Hammad Patel Cyberpunk Portfolio & Engineering Workspace",
-    subtitle: "Production Web Architecture · Deployed on Vercel",
-    category: "web",
-    description: "Official portfolio and technical workspace deployed live at hammadpatel.vercel.app. Engineered with high-contrast cyberpunk gaming aesthetics, interactive circuit and waveform simulation laboratory, interactive project price & hour estimator tailored for Indian markets, and full ECE academic coursework explorer.",
-    longDescription: "Built with responsive performance and modern cyberpunk neon contrasts. Integrates real-time CRT waveform oscilloscope synthesis via Web Audio API, dynamic Indian Rupee proposal builder with pre-encoded WhatsApp dispatch, and full 7-semester syllabus matrix.",
-    technologies: ["React 19", "Tailwind CSS", "TypeScript", "Three.js", "Web Audio API", "Vercel"],
-    metrics: ["Live at hammadpatel.vercel.app", "<1s Fast Load", "100% Mobile Responsive"],
-    features: ["Cyberpunk Gaming HUD", "Virtual Oscilloscope & Tone Synth", "Instant Indian Rupee Project Estimator", "Direct WhatsApp & Email Pipeline"],
-    demoUrl: "https://hammadpatel.vercel.app",
-    githubUrl: "https://hammadpatel.vercel.app",
-    badge: "Live on Vercel",
-    imageAlt: "Hammad Patel Cyberpunk Portfolio Platform"
-  },
-  {
     id: "circuit-waveform-studio",
-    title: "Virtual Circuit & Waveform Studio",
-    subtitle: "Interactive CircuitJS & eSim Companion",
+    title: "Virtual Circuit & Waveform Studio (Advanced ECE Lab)",
+    subtitle: "Real-Time Interactive SPICE & Signal Synthesis Engineering Platform",
     category: "ece",
-    description: "Web-based interactive electronic circuit simulation and waveform oscilloscope inspired by IIT Bombay Spoken Tutorial learnings. Visualizes RC/RLC filter behavior, diode rectification, and operational amplifier signal shaping in real time.",
-    longDescription: "Allows users to adjust input frequencies, resistance, and capacitance on the fly while watching the dynamic voltage waveform update across a live HTML5 canvas oscilloscope with real Web Audio tone synthesis.",
-    technologies: ["React 19", "Tailwind CSS", "Python", "TypeScript", "HTML5 Canvas", "CircuitJS Logic", "Web Audio API"],
-    metrics: ["60 FPS Trace Render", "Live Web Audio Oscillator", "Zero-latency Controls"],
-    features: ["Sine, Square, Triangle & AM generators", "Real-time low-pass & high-pass filtering", "Peak-to-Peak (Vpp) & RMS telemetry", "Direct waveform screenshot capture"],
+    description: "Advanced web-based electronic circuit simulation laboratory inspired by IIT Bombay Spoken Tutorial learnings. Features real-time CRT dual-trace oscilloscope, 8 circuit topologies (RLC resonance, active Butterworth filters, Wien bridge oscillators, diode clippers, AM modulation), cursor voltage/time measurement delta, Bode magnitude & phase frequency response plot, harmonic FFT spectrum analyzer, and Web Audio tone synthesizer.",
+    longDescription: "Engineered to simulate non-linear differential analog behaviors in real-time in the browser. Users can adjust frequency, amplitude, resistance, capacitance, and inductance while observing instantaneous AC/DC transient responses, phase shifts, cut-off resonance peaks, and audio frequency acoustic synthesis.",
+    technologies: ["CircuitJS Logic", "eSim / Ngspice", "Bode Frequency Response", "Web Audio API", "HTML5 Canvas CRT Engine", "React 19", "TypeScript", "Tailwind CSS"],
+    metrics: ["60 FPS Phosphor Trace", "8 Circuit Topologies", "Bode & FFT Analysis", "Interactive Scope Cursors"],
+    features: [
+      "8 Interactive Topologies: RC Low/High-Pass, RLC Band-Pass Resonance, Active Op-Amp Filter, Diode Bridge Rectifier, 555 Astable PWM, Wien Bridge Sine Oscillator & AM Modulator",
+      "Dual-Channel Time-Domain CRT Scope with P31 Green, Cyan & Amber Phosphor Glow",
+      "Interactive Cursors for Precision Voltage Delta (ΔV) & Time Interval (Δt) Readouts",
+      "Dynamic Bode Plot for Logarithmic Frequency Magnitude (dB) & Phase Shift (Degrees)",
+      "High-Resolution PNG Oscilloscope & Bode Plot Snapshot Export",
+      "Full Web Audio Tone Synthesizer with Live Frequency Synchronization"
+    ],
     demoUrl: "#portfolio",
     githubUrl: "https://github.com",
-    badge: "IIT Bombay Inspired",
-    imageAlt: "Virtual Circuit Simulator"
+    badge: "IIT Bombay Spoken Tutorial Centerpiece",
+    imageAlt: "Advanced Virtual Circuit & Waveform Studio"
   },
   {
-    id: "seo-optimization-engine",
-    title: "SEO Optimization & Digital Growth Initiative",
-    subtitle: "Technical Search Engine Architecture",
-    category: "seo",
-    description: "Comprehensive SEO audit and optimization initiative implemented across web platforms. Enhanced discoverability via semantic HTML5, JSON-LD structured schema, canonical setups, and Core Web Vitals optimizations.",
-    longDescription: "Systematic enhancement targeting organic Google search rankings. Conducted keyword mapping, OpenGraph metadata integration, robots.txt routing, and asset compression to maximize visibility.",
-    technologies: ["Technical SEO", "Python", "React 19", "Tailwind CSS", "Schema.org JSON-LD", "Core Web Vitals"],
-    metrics: ["98/100 Lighthouse Performance", "100/100 SEO Score", "+240% Organic Impressions"],
-    features: ["Rich Snippets & Microdata", "Mobile Viewport Optimization", "Asset Lazy Loading", "Social Share Cards"],
-    demoUrl: "#portfolio",
+    id: "rf-satellite-link-calculator",
+    title: "Satellite Communication & Radar Link Analyzer",
+    subtitle: "GTU Semester 6 & 7 ECE Academic Computing Suite",
+    category: "ece",
+    description: "Analytical computation tool for satellite uplink/downlink link budgets, carrier-to-noise density ratio (C/N0), free-space path loss (FSPL), G/T figure of merit, and radar range detection equations for pulse & Doppler systems.",
+    longDescription: "Formulated using theoretical principles from GTU Semester 6 Satellite Communication and Semester 7 Radar & Navigation Aids (RNA). Models transponder EIRP, atmospheric attenuation, parabolic antenna beamwidth, and Doppler frequency velocity tracking.",
+    technologies: ["Python", "SciPy", "RF Physics Equations", "React 19", "TypeScript", "Mathematical Modeling"],
+    metrics: ["Sub-dB Link Precision", "Doppler Velocity Radar", "GTU Syllabus Aligned"],
+    features: [
+      "Uplink & Downlink Free Space Path Loss (FSPL) and Atmospheric Attenuation",
+      "Earth Station G/T Ratio & Transponder Effective Isotropic Radiated Power (EIRP)",
+      "Radar Range Equation Solver for Target Cross Section (RCS) & Detection Thresholds",
+      "Doppler Shift Frequency to Target Radial Velocity Transformation"
+    ],
+    demoUrl: "#coursework",
     githubUrl: "https://github.com",
-    badge: "SEO Initiative",
-    imageAlt: "SEO Optimization Dashboard"
+    badge: "Core ECE Engineering",
+    imageAlt: "Satellite & Radar Link Analyzer"
   }
 ];
 
 export const HIRE_ME_SERVICES = [
   {
-    id: "wordpress-website",
-    title: "WordPress Website Making",
-    iconName: "Globe",
-    tagline: "Complete business websites, portfolio sites, blogs, and WooCommerce stores",
+    id: "ece-graduate-role",
+    title: "Graduate ECE Engineer & Core Electronics Roles",
+    iconName: "Radio",
+    tagline: "Full-time or final-year placement opportunities in RF, Telecom, VLSI, and Core Electronics",
     features: [
-      "Complete WordPress website design & setup",
-      "Custom page layouts with Elementor / Gutenberg",
-      "WooCommerce store & product catalog setup",
-      "Plugin configuration, contact forms & speed tuning"
+      "Strong foundation across 7 Semesters of GTU ECE curriculum (6.38 CGPA till Sem 6)",
+      "RF & Microwave Engineering, Satellite Link Design & Radar Navigation Systems",
+      "Analog & Digital Circuit Analysis, CMOS VLSI & Fiber Optic Communications",
+      "Ready for 2027 Graduation placements & final-year industrial traineeships"
     ],
-    startingPrice: "Project Basis",
-    turnaround: "3 - 7 Days"
+    availability: "Final Year (2026–2027)",
+    locationType: "On-Site / Hybrid / Remote"
   },
   {
-    id: "shopify-website",
-    title: "Shopify Website Making",
-    iconName: "ShoppingBag",
-    tagline: "High-converting Shopify online stores, theme customization, and checkout setup",
+    id: "circuit-simulation-internship",
+    title: "Circuit Simulation, SPICE & Hardware R&D Internships",
+    iconName: "Cpu",
+    tagline: "Electronic schematic capture, Ngspice verification, and filter/waveform modeling",
     features: [
-      "Full Shopify store creation & theme setup",
-      "Product catalog, variants & collection organization",
-      "Payment gateway & shipping setup",
-      "Mobile-friendly design & conversion optimization"
+      "Trained via IIT Bombay Spoken Tutorial Project in eSim & CircuitJS",
+      "Analog/Digital schematic capture, netlist generation & transient simulation",
+      "RC/RLC filter design, operational amplifier conditioning & rectifier testing",
+      "Signal integrity verification, Bode plot analysis & lab documentation"
     ],
-    startingPrice: "Project Basis",
-    turnaround: "5 - 10 Days"
+    availability: "Immediate / Semester 7–8",
+    locationType: "Bharuch / Gujarat / Pan-India"
   },
   {
-    id: "cms-builders",
-    title: "Website Builders (Wix, Webflow, Framer)",
-    iconName: "Layout",
-    tagline: "Modern landing pages, company profiles, and visual CMS platforms",
+    id: "embedded-iot-systems",
+    title: "Embedded Systems, IoT & Signal Processing Projects",
+    iconName: "Activity",
+    tagline: "Microcontroller firmware, wireless sensor networks (WSN), and Python DSP scripts",
     features: [
-      "Visual website design on Framer, Webflow, and Wix",
-      "Modern clean typography & interactive layouts",
-      "Domain connection & live site launch",
-      "Responsive layout adaptation for all screen sizes"
+      "8051 & ARM microcontroller programming in C / Embedded C",
+      "Wireless Sensor Networks (WSN), Zigbee & IoT telemetry architectures",
+      "Digital Signal Processing (FFT, FIR/IIR filters) using Python & SciPy",
+      "Hardware-software co-design and real-time sensor data visualization"
     ],
-    startingPrice: "Project Basis",
-    turnaround: "3 - 7 Days"
+    availability: "Project / Collaboration",
+    locationType: "Academic & Industrial R&D"
   },
   {
-    id: "seo-maintenance",
-    title: "Website SEO & Maintenance",
-    iconName: "TrendingUp",
-    tagline: "Google visibility, fast loading speed, and ongoing website management",
+    id: "engineering-web-interfaces",
+    title: "Technical Web Dashboards & Simulation Interfaces",
+    iconName: "Code2",
+    tagline: "Combining ECE domain expertise with modern Web Development skills",
     features: [
-      "On-page SEO setup & Google indexing",
-      "Website speed audit & asset optimization",
-      "Regular content updates & security backups",
-      "Mobile UI fixes & responsiveness checks"
+      "Interactive web-based oscilloscopes and hardware telemetry dashboards",
+      "Engineering calculators, RF link budget tools & educational lab portals",
+      "Clean, responsive web applications built with React, TypeScript & Python",
+      "Bridging hardware engineering data with intuitive browser visualizations"
     ],
-    startingPrice: "Monthly / Per-Audit",
-    turnaround: "2 - 5 Days"
+    availability: "Technical Collaboration",
+    locationType: "Remote / Hybrid"
   }
 ];

@@ -121,15 +121,15 @@ export const AcademicMilestones: React.FC = () => {
             </div>
           </div>
 
-          {/* Segmented Semester Buttons */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2 mb-8">
+          {/* Segmented Semester Buttons (Mobile swipe support) */}
+          <div className="flex md:grid md:grid-cols-6 gap-2 mb-8 overflow-x-auto pb-2 md:pb-0 scrollbar-none">
             {ACADEMIC_SEMESTERS.slice(0, 6).map((sem) => {
               const isSelected = sem.semester === selectedSem;
               return (
                 <button
                   key={sem.semester}
                   onClick={() => setSelectedSem(sem.semester)}
-                  className={`p-3.5 rounded-2xl flex flex-col items-center text-center transition-all border ${
+                  className={`min-w-[110px] md:min-w-0 p-3 sm:p-3.5 rounded-2xl flex flex-col items-center text-center transition-all border shrink-0 ${
                     isSelected
                       ? 'bg-indigo-600 text-white border-indigo-500 shadow-lg shadow-indigo-600/25 scale-102'
                       : 'bg-slate-50 dark:bg-slate-800/60 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200/80 dark:border-white/5'

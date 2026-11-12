@@ -30,17 +30,17 @@ export const SkillsSection: React.FC = () => {
             Engineering & Software Stack
           </div>
           <h2 className="text-3xl sm:text-5xl font-extrabold font-display tracking-tight text-slate-900 dark:text-white">
-            Technical Skills & Architecture
+            ECE &amp; Web Development Skills
           </h2>
           <p className="mt-3 text-slate-600 dark:text-slate-400 max-w-2xl text-sm sm:text-base">
-            Bridging electronic circuit simulation, RF systems, and modern website creation across WordPress, Shopify, visual site builders, Java, and Python.
+            Strong academic and practical competencies across Electronics &amp; Communication Systems, VLSI &amp; Embedded Hardware, Scientific Programming, and Modern Web Development.
           </p>
 
-          {/* Clean Segmented Filter Bar */}
-          <div className="flex flex-wrap items-center justify-center gap-1.5 p-1 rounded-2xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-white/10 mt-8 text-xs font-semibold">
+          {/* Clean Segmented Filter Bar (Mobile Horizontal Swipe Support) */}
+          <div className="flex sm:flex-wrap items-center overflow-x-auto pb-2 sm:pb-1 p-1 rounded-2xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-white/10 mt-8 text-xs font-semibold max-w-full scrollbar-none justify-start sm:justify-center">
             <button
               onClick={() => setActiveTab('all')}
-              className={`px-4 py-2 rounded-xl transition-all ${
+              className={`px-4 py-2 rounded-xl transition-all cursor-pointer whitespace-nowrap shrink-0 ${
                 activeTab === 'all'
                   ? 'bg-indigo-600 text-white shadow-md'
                   : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
@@ -49,44 +49,44 @@ export const SkillsSection: React.FC = () => {
               All Domains ({SKILL_CATEGORIES.length})
             </button>
             <button
-              onClick={() => setActiveTab('word')}
-              className={`px-4 py-2 rounded-xl transition-all ${
-                activeTab === 'word'
-                  ? 'bg-indigo-600 text-white shadow-md'
-                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
-              }`}
-            >
-              WordPress & Shopify
-            </button>
-            <button
-              onClick={() => setActiveTab('programming')}
-              className={`px-4 py-2 rounded-xl transition-all ${
-                activeTab === 'programming'
-                  ? 'bg-indigo-600 text-white shadow-md'
-                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
-              }`}
-            >
-              Java & Python
-            </button>
-            <button
               onClick={() => setActiveTab('electronics')}
-              className={`px-4 py-2 rounded-xl transition-all ${
+              className={`px-4 py-2 rounded-xl transition-all cursor-pointer whitespace-nowrap shrink-0 ${
                 activeTab === 'electronics'
                   ? 'bg-indigo-600 text-white shadow-md'
                   : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
               }`}
             >
-              ECE, Satellite & Radar
+              Core ECE, RF &amp; Satellite
             </button>
             <button
-              onClick={() => setActiveTab('digital')}
-              className={`px-4 py-2 rounded-xl transition-all ${
-                activeTab === 'digital'
+              onClick={() => setActiveTab('vlsi')}
+              className={`px-4 py-2 rounded-xl transition-all cursor-pointer whitespace-nowrap shrink-0 ${
+                activeTab === 'vlsi'
                   ? 'bg-indigo-600 text-white shadow-md'
                   : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
               }`}
             >
-              SEO & Growth
+              VLSI &amp; Embedded
+            </button>
+            <button
+              onClick={() => setActiveTab('programming')}
+              className={`px-4 py-2 rounded-xl transition-all cursor-pointer whitespace-nowrap shrink-0 ${
+                activeTab === 'programming'
+                  ? 'bg-indigo-600 text-white shadow-md'
+                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+              }`}
+            >
+              Python, Java &amp; C
+            </button>
+            <button
+              onClick={() => setActiveTab('web')}
+              className={`px-4 py-2 rounded-xl transition-all cursor-pointer whitespace-nowrap shrink-0 ${
+                activeTab === 'web'
+                  ? 'bg-indigo-600 text-white shadow-md'
+                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+              }`}
+            >
+              Web Development
             </button>
           </div>
         </div>
@@ -102,10 +102,10 @@ export const SkillsSection: React.FC = () => {
                 {/* Category Header */}
                 <div className="flex items-center gap-3.5 mb-5 pb-4 border-b border-slate-100 dark:border-white/5">
                   <div className="w-11 h-11 rounded-2xl bg-indigo-50 dark:bg-indigo-950 flex items-center justify-center text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800 shrink-0">
-                    {category.title.includes('Web') && <Globe className="w-5 h-5" />}
-                    {category.title.includes('Programming') && <Code2 className="w-5 h-5" />}
-                    {category.title.includes('Electronics') && <Radio className="w-5 h-5" />}
-                    {category.title.includes('Digital') && <Cpu className="w-5 h-5" />}
+                    {category.iconName === 'Globe' && <Globe className="w-5 h-5" />}
+                    {category.iconName === 'Code2' && <Code2 className="w-5 h-5" />}
+                    {category.iconName === 'Radio' && <Radio className="w-5 h-5" />}
+                    {category.iconName === 'Cpu' && <Cpu className="w-5 h-5" />}
                   </div>
                   <div>
                     <h3 className="text-xl font-bold font-display text-slate-900 dark:text-white">

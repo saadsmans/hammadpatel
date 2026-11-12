@@ -46,21 +46,20 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="lg:col-span-7 flex flex-col items-start text-left w-full">
             
             {/* Cyber HUD Kicker */}
-            <div className="inline-flex flex-wrap items-center gap-2 px-3.5 py-1.5 rounded bg-sky-50 dark:bg-[#00f0ff]/10 border border-sky-300 dark:border-[#00f0ff]/40 text-sky-700 dark:text-[#00f0ff] text-xs font-mono font-bold tracking-wider uppercase mb-4 shadow-sm dark:shadow-[0_0_12px_rgba(0,240,255,0.2)] max-w-full">
-              <span className="w-2 h-2 rounded-full bg-sky-500 dark:bg-[#00f0ff] animate-ping" />
-              <span>[// ELECTRONICS & COMMUNICATION · WORDPRESS & SHOPIFY · IIT BOMBAY]</span>
+            <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1.5 rounded bg-sky-50 dark:bg-[#00f0ff]/10 border border-sky-300 dark:border-[#00f0ff]/40 text-sky-700 dark:text-[#00f0ff] text-[10px] sm:text-xs font-mono font-bold tracking-normal sm:tracking-wider uppercase mb-4 shadow-sm dark:shadow-[0_0_12px_rgba(0,240,255,0.2)] max-w-full">
+              <span className="w-2 h-2 rounded-full bg-sky-500 dark:bg-[#00f0ff] animate-ping shrink-0" />
+              <span className="break-words">[// ELECTRONICS &amp; COMMUNICATION ENGINEERING · IIT BOMBAY INTERN · WEB DEV SKILLS]</span>
             </div>
 
-            {/* Oversized Cyberpunk Headline in Orbitron Font with Exact Same Font & Color as Reference */}
+            {/* Oversized Cyberpunk Headline in Orbitron Font - Scaled for Mobile Viewports */}
             <h1 
-              style={{ fontFamily: "'Orbitron', sans-serif", letterSpacing: '0.04em' }}
-              className="text-4xl sm:text-6xl lg:text-7xl font-black font-display font-orbitron tracking-wide text-slate-900 dark:text-white leading-[1.08] mb-4 break-words w-full"
+              style={{ fontFamily: "'Orbitron', sans-serif" }}
+              className="text-[30px] min-[370px]:text-[36px] sm:text-6xl lg:text-7xl font-black font-display font-orbitron tracking-tight min-[370px]:tracking-normal sm:tracking-wide text-slate-900 dark:text-white leading-[1.08] mb-4 break-words w-full"
             >
               HAMMAD <br />
               <span 
                 style={{ 
                   fontFamily: "'Orbitron', sans-serif", 
-                  letterSpacing: '0.04em',
                   backgroundImage: 'linear-gradient(90deg, #6366f1 0%, #38bdf8 52%, #00f0ff 100%)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent'
@@ -72,22 +71,22 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             </h1>
 
             {/* Subtitle */}
-            <p className="text-sm sm:text-base font-cyber text-slate-600 dark:text-slate-300 max-w-xl leading-relaxed mb-6 font-medium">
-              Final-year ECE student at <strong className="text-slate-900 dark:text-white">Government Engineering College, Bharuch</strong>, specializing in creating high-converting websites through <strong className="text-sky-600 dark:text-[#00f0ff]">WordPress</strong>, <strong className="text-emerald-600 dark:text-[#00ff66]">Shopify</strong>, custom themes, and visual website builders with high-contrast UI design.
+            <p className="text-xs sm:text-base font-cyber text-slate-600 dark:text-slate-300 max-w-xl leading-relaxed mb-6 font-medium">
+              Final-year <strong className="text-slate-900 dark:text-white">Electronics &amp; Communication Engineering (ECE)</strong> student at <strong className="text-slate-900 dark:text-white">Government Engineering College, Bharuch</strong>, with strong core competencies in <strong className="text-sky-600 dark:text-[#00f0ff]">RF &amp; Satellite Communication, VLSI, DSP, and Circuit Simulation (eSim &amp; CircuitJS)</strong> alongside modern <strong className="text-emerald-600 dark:text-[#00ff66]">Web Development &amp; Programming skills</strong>.
             </p>
 
             {/* Academic Standout Box (Cyberpunk HUD styling) */}
             <div className="w-full p-4 sm:p-5 rounded-2xl cyber-card mb-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-              <div className="flex items-center gap-3.5 min-w-0">
+              <div className="flex items-center gap-3.5 min-w-0 flex-1">
                 <div className="w-10 h-10 rounded-xl bg-sky-100 dark:bg-[#00f0ff]/15 border border-sky-300 dark:border-[#00f0ff]/40 flex items-center justify-center text-sky-700 dark:text-[#00f0ff] shrink-0 shadow-sm dark:shadow-[0_0_10px_rgba(0,240,255,0.3)]">
                   <GraduationCap className="w-5 h-5" />
                 </div>
-                <div className="min-w-0">
-                  <span className="text-[10px] font-mono text-slate-500 dark:text-slate-400 uppercase tracking-widest block truncate">
-                    GEC BHARUCH · RUN 2023–2027
+                <div className="min-w-0 flex-1">
+                  <span className="text-[10px] font-mono text-slate-500 dark:text-slate-400 uppercase tracking-widest block">
+                    GEC BHARUCH · BATCH 2023–2027
                   </span>
-                  <span className="text-xs sm:text-sm font-bold font-display text-slate-900 dark:text-white truncate block">
-                    BE in Electronics & Communication Engineering
+                  <span className="text-xs sm:text-sm font-bold font-display text-slate-900 dark:text-white block leading-snug">
+                    BE in Electronics &amp; Communication Engineering
                   </span>
                 </div>
               </div>
@@ -122,24 +121,24 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             <div className="flex flex-wrap items-center gap-3 w-full sm:w-auto">
               <button
                 onClick={onOpenHireMe}
-                className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold font-mono text-xs sm:text-sm text-white dark:text-black bg-sky-600 hover:bg-sky-500 dark:bg-[#00f0ff] dark:hover:bg-[#00d0df] shadow-lg dark:shadow-[0_0_20px_rgba(0,240,255,0.5)] transition-all hover:scale-102 active:scale-98"
+                className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold font-mono text-xs sm:text-sm text-white dark:text-black bg-sky-600 hover:bg-sky-500 dark:bg-[#00f0ff] dark:hover:bg-[#00d0df] shadow-lg dark:shadow-[0_0_20px_rgba(0,240,255,0.5)] transition-all hover:scale-102 active:scale-98 cursor-pointer"
               >
-                <Zap className="w-4 h-4 fill-current stroke-none" />
-                <span>ESTIMATE & HIRE ME</span>
+                <Briefcase className="w-4 h-4" />
+                <span>HIRE FOR ECE ROLES</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
 
               <button
                 onClick={onOpenCV}
-                className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-mono text-xs sm:text-sm font-bold text-slate-900 dark:text-white bg-white hover:bg-slate-100 dark:bg-black/70 dark:hover:bg-black/90 border border-slate-300 dark:border-[#00f0ff]/40 shadow-sm transition-all"
+                className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-mono text-xs sm:text-sm font-bold text-slate-900 dark:text-white bg-white hover:bg-slate-100 dark:bg-black/70 dark:hover:bg-black/90 border border-slate-300 dark:border-[#00f0ff]/40 shadow-sm transition-all cursor-pointer"
               >
                 <FileText className="w-4 h-4 text-sky-600 dark:text-[#00f0ff]" />
-                <span>VIEW CV (PDF)</span>
+                <span>VIEW &amp; DOWNLOAD CV (PDF)</span>
               </button>
 
               <button
                 onClick={() => onNavigate ? onNavigate('portfolio') : undefined}
-                className="inline-flex items-center justify-center gap-1.5 px-3 py-3.5 text-xs font-mono font-bold text-amber-600 dark:text-[#fcee0a] hover:underline"
+                className="inline-flex items-center justify-center gap-1.5 px-3 py-3.5 text-xs font-mono font-bold text-amber-600 dark:text-[#fcee0a] hover:underline cursor-pointer"
               >
                 <Activity className="w-3.5 h-3.5 text-amber-600 dark:text-[#fcee0a]" />
                 <span>[ LIVE SIGNAL LAB ↵ ]</span>
@@ -148,11 +147,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
           </div>
 
-          {/* Right Column: Cyberpunk HUD Identity & Specialization Matrix (NO HP LOGO BOX) */}
+          {/* Right Column: Cyberpunk HUD Identity & Specialization Matrix */}
           <div className="lg:col-span-5 flex flex-col w-full">
             <div className="cyber-bracket p-6 sm:p-7 rounded-3xl cyber-card relative overflow-hidden">
               
-              {/* Profile Card Header (Clean: No HP logo box!) */}
+              {/* Profile Card Header */}
               <div className="flex items-center justify-between pb-4 border-b border-slate-200 dark:border-[#00f0ff]/20">
                 <div>
                   <h3 
@@ -162,7 +161,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                     HAMMAD PATEL
                   </h3>
                   <span className="text-xs font-mono text-sky-600 dark:text-[#00f0ff] block font-semibold mt-0.5">
-                    WordPress & Shopify Specialist · ECE Student
+                    ECE Engineer · Hardware Simulation &amp; Web Dev Skills
                   </span>
                 </div>
 
@@ -174,30 +173,30 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
               {/* Core Credentials HUD */}
               <div className="py-4 space-y-3 text-xs font-mono border-b border-slate-200 dark:border-[#00f0ff]/20">
-                <div className="flex items-start justify-between gap-3">
-                  <span className="text-slate-500 dark:text-slate-400 shrink-0">INSTITUTION:</span>
-                  <span className="font-bold text-slate-900 dark:text-white text-right">
+                <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-0.5 sm:gap-3">
+                  <span className="text-slate-500 dark:text-slate-400 shrink-0 text-[11px] sm:text-xs">INSTITUTION:</span>
+                  <span className="font-bold text-slate-900 dark:text-white text-left sm:text-right">
                     GEC Bharuch (2023–2027)
                   </span>
                 </div>
 
-                <div className="flex items-start justify-between gap-3">
-                  <span className="text-slate-500 dark:text-slate-400 shrink-0">ACADEMIC RESULT:</span>
-                  <span className="font-black text-emerald-600 dark:text-[#00ff66] text-right">
+                <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-0.5 sm:gap-3">
+                  <span className="text-slate-500 dark:text-slate-400 shrink-0 text-[11px] sm:text-xs">ACADEMIC RESULT:</span>
+                  <span className="font-black text-emerald-600 dark:text-[#00ff66] text-left sm:text-right">
                     {PERSONAL_INFO.cgpaTillSem6} CGPA (till Sem 6)
                   </span>
                 </div>
 
-                <div className="flex items-start justify-between gap-3">
-                  <span className="text-slate-500 dark:text-slate-400 shrink-0">INTERNSHIP:</span>
-                  <span className="font-bold text-sky-600 dark:text-[#00f0ff] text-right">
-                    IIT Bombay Spoken Tutorial (CircuitJS & eSim)
+                <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-0.5 sm:gap-3">
+                  <span className="text-slate-500 dark:text-slate-400 shrink-0 text-[11px] sm:text-xs">INTERNSHIP:</span>
+                  <span className="font-bold text-sky-600 dark:text-[#00f0ff] text-left sm:text-right">
+                    IIT Bombay Spoken Tutorial (CircuitJS &amp; eSim)
                   </span>
                 </div>
 
-                <div className="flex items-start justify-between gap-3">
-                  <span className="text-slate-500 dark:text-slate-400 shrink-0">LOCATION:</span>
-                  <span className="font-semibold text-slate-700 dark:text-slate-300 text-right">
+                <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-0.5 sm:gap-3">
+                  <span className="text-slate-500 dark:text-slate-400 shrink-0 text-[11px] sm:text-xs">LOCATION:</span>
+                  <span className="font-semibold text-slate-700 dark:text-slate-300 text-left sm:text-right">
                     Bharuch, Gujarat, India
                   </span>
                 </div>
@@ -206,32 +205,32 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               {/* Key Technical Competencies */}
               <div className="pt-4 pb-2">
                 <span className="text-[10px] font-mono uppercase tracking-widest text-sky-600 dark:text-[#00f0ff] block mb-2.5 font-bold">
-                  CORE SPECIALIZATIONS & PLATFORMS:
+                  CORE ECE &amp; TECHNICAL COMPETENCIES:
                 </span>
                 
                 <div className="flex flex-wrap gap-1.5 text-xs font-mono">
                   <span className="px-2.5 py-1 rounded bg-sky-50 dark:bg-[#00f0ff]/10 text-sky-700 dark:text-[#00f0ff] border border-sky-200 dark:border-[#00f0ff]/30">
-                    WordPress Website Making
+                    RF &amp; Satellite Comm
                   </span>
                   <span className="px-2.5 py-1 rounded bg-emerald-50 dark:bg-[#00ff66]/10 text-emerald-700 dark:text-[#00ff66] border border-emerald-200 dark:border-[#00ff66]/30">
-                    Shopify Store Creation
-                  </span>
-                  <span className="px-2.5 py-1 rounded bg-rose-50 dark:bg-[#ff0055]/10 text-rose-700 dark:text-[#ff0055] border border-rose-200 dark:border-[#ff0055]/30">
-                    Visual Web Builders (Wix, Framer)
-                  </span>
-                  <span className="px-2.5 py-1 rounded bg-slate-100 dark:bg-black/60 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
-                    WooCommerce Setup
+                    CircuitJS &amp; eSim SPICE
                   </span>
                   <span className="px-2.5 py-1 rounded bg-amber-50 dark:bg-[#fcee0a]/10 text-amber-700 dark:text-[#fcee0a] border border-amber-200 dark:border-[#fcee0a]/30">
-                    CircuitJS & eSim Simulation
+                    VLSI &amp; Embedded Systems
                   </span>
                   <span className="px-2.5 py-1 rounded bg-slate-100 dark:bg-black/60 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
-                    Technical SEO & Speed Tuning
+                    Radar &amp; DSP
+                  </span>
+                  <span className="px-2.5 py-1 rounded bg-rose-50 dark:bg-[#ff0055]/10 text-rose-700 dark:text-[#ff0055] border border-rose-200 dark:border-[#ff0055]/30">
+                    Web Development Skills
+                  </span>
+                  <span className="px-2.5 py-1 rounded bg-slate-100 dark:bg-black/60 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+                    Python, Java &amp; C
                   </span>
                 </div>
               </div>
 
-              {/* Direct Quick WhatsApp / Commission Actions */}
+              {/* Direct Quick WhatsApp / Hire Actions */}
               <div className="mt-4 pt-3 border-t border-slate-200 dark:border-[#00f0ff]/20 flex gap-2">
                 <a
                   href={PERSONAL_INFO.whatsapp}
@@ -245,10 +244,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
                 <button
                   onClick={onOpenHireMe}
-                  className="flex-1 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-black/80 dark:hover:bg-black text-sky-700 dark:text-[#00f0ff] border border-slate-300 dark:border-[#00f0ff]/50 text-xs font-bold font-mono flex items-center justify-center gap-1.5 transition-colors"
+                  className="flex-1 py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-black/80 dark:hover:bg-black text-sky-700 dark:text-[#00f0ff] border border-slate-300 dark:border-[#00f0ff]/50 text-xs font-bold font-mono flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
                 >
                   <Briefcase className="w-3.5 h-3.5 text-sky-600 dark:text-[#00f0ff]" />
-                  <span>START ESTIMATE</span>
+                  <span>ECE ROLES &amp; HIRE</span>
                 </button>
               </div>
 

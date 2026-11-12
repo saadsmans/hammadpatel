@@ -129,8 +129,8 @@ export const CourseworkExplorer: React.FC = () => {
         {/* If Not Searching: Show Semester Navigation Tabs */}
         {!searchQuery && (
           <div className="space-y-6 mb-10">
-            {/* Semester Buttons Row */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-2.5">
+            {/* Semester Buttons Row (Horizontal Swipe on Mobile, 7 cols on Desktop) */}
+            <div className="flex md:grid md:grid-cols-7 gap-2.5 overflow-x-auto pb-2 md:pb-0 scrollbar-none">
               {ACADEMIC_SEMESTERS.map((sem) => {
                 const isSelected = sem.semester === selectedSemester;
                 const isFinalYear = sem.semester === 7;
@@ -139,7 +139,7 @@ export const CourseworkExplorer: React.FC = () => {
                   <button
                     key={sem.semester}
                     onClick={() => setSelectedSemester(sem.semester)}
-                    className={`p-3.5 rounded-2xl text-left transition-all border flex flex-col justify-between ${
+                    className={`min-w-[130px] md:min-w-0 p-3 sm:p-3.5 rounded-2xl text-left transition-all border flex flex-col justify-between shrink-0 ${
                       isSelected
                         ? 'bg-indigo-600 text-white border-indigo-500 shadow-xl shadow-indigo-600/25 scale-102'
                         : 'bg-white dark:bg-slate-900/80 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-white/5'

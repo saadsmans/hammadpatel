@@ -175,7 +175,7 @@ export function App() {
               />
             </CyberSectionReveal>
 
-            {/* 2. Featured Project Spotlight: hammadpatel.vercel.app (Personal Portfolio Website Made by Hammad Patel) */}
+            {/* 2. Featured Engineering Spotlight: Virtual Circuit & Waveform Studio (IIT Bombay Spoken Tutorial) */}
             <CyberSectionReveal>
               <section className="py-12 sm:py-16 relative bg-white/60 dark:bg-black/40 border-y border-slate-200 dark:border-[#00f0ff]/20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -183,18 +183,18 @@ export function App() {
                     <div>
                       <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-sky-50 dark:bg-[#00f0ff]/10 border border-sky-300 dark:border-[#00f0ff]/40 text-xs font-mono font-bold text-sky-700 dark:text-[#00f0ff] uppercase mb-2">
                         <Sparkles className="w-3.5 h-3.5 text-sky-600 dark:text-[#00f0ff]" />
-                        <span>FEATURED RECENT WORK · MADE BY HAMMAD PATEL</span>
+                        <span>FEATURED ECE ENGINEERING CENTERPIECE · IIT BOMBAY INTERNSHIP</span>
                       </div>
                       <h2 className="text-2xl sm:text-4xl font-black font-display text-slate-900 dark:text-white uppercase tracking-tight">
-                        hammadpatel.vercel.app
+                        VIRTUAL CIRCUIT &amp; WAVEFORM STUDIO
                       </h2>
                     </div>
 
                     <button
                       onClick={() => handleNavigate('portfolio')}
-                      className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-black/60 dark:hover:bg-[#00f0ff]/20 text-slate-800 dark:text-[#00f0ff] font-mono text-xs font-bold border border-slate-300 dark:border-[#00f0ff]/40 transition-all"
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-sky-600 hover:bg-sky-500 dark:bg-[#00f0ff] dark:hover:bg-[#00d0df] text-white dark:text-black font-mono text-xs font-bold transition-all shadow-md"
                     >
-                      <span>EXPLORE ALL RECENT WORKS</span>
+                      <span>LAUNCH FULL LAB ENVIRONMENT</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </button>
                   </div>
@@ -205,7 +205,7 @@ export function App() {
                       
                       <div className="lg:col-span-5 relative bg-gradient-to-br from-[#0a0e1a] via-[#0d1326] to-[#05070e] p-5 sm:p-6 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-slate-200 dark:border-[#00f0ff]/20 overflow-hidden">
                         
-                        {/* Simulated Browser Address Bar & Window Chrome (Zero AI Images) */}
+                        {/* Live SPICE Telemetry Screen */}
                         <div className="rounded-2xl border border-sky-500/30 dark:border-[#00f0ff]/40 bg-black/85 backdrop-blur-md overflow-hidden shadow-2xl p-4 sm:p-5 flex flex-col justify-between h-full min-h-[290px]">
                           
                           {/* Browser Window Controls */}
@@ -217,43 +217,43 @@ export function App() {
                             </div>
                             <div className="px-2.5 py-0.5 rounded-full bg-slate-900 border border-slate-700 text-sky-300 text-[11px] font-mono flex items-center gap-1.5">
                               <span className="w-1.5 h-1.5 rounded-full bg-[#00ff66] animate-ping" />
-                              <span>https://hammadpatel.vercel.app</span>
+                              <span>esim.iitb.ac.in · CircuitJS Kernel</span>
                             </div>
-                            <span className="text-[10px] text-emerald-400 font-bold">200 OK</span>
+                            <span className="text-[10px] text-emerald-400 font-bold">ONLINE</span>
                           </div>
 
-                          {/* Live Terminal / System Telemetry Screen */}
+                          {/* Live Terminal Screen */}
                           <div className="py-3 space-y-2 font-mono text-xs">
                             <div className="flex items-center gap-2 text-sky-400">
                               <span className="text-[#00ff66] font-bold">$</span>
-                              <span className="text-white font-bold">curl -I</span>
-                              <span className="text-[#00f0ff]">hammadpatel.vercel.app</span>
+                              <span className="text-white font-bold">ngspice -b</span>
+                              <span className="text-[#00f0ff]">circuit_topologies.cir</span>
                             </div>
                             
                             <div className="p-2.5 rounded-xl bg-slate-950/90 border border-white/10 space-y-1.5 text-[11px]">
                               <div className="flex items-center justify-between">
-                                <span className="text-slate-400">ARCHITECT:</span>
-                                <span className="text-white font-bold">Hammad Patel</span>
+                                <span className="text-slate-400">SIMULATION ENGINE:</span>
+                                <span className="text-white font-bold">IIT Bombay eSim / Ngspice</span>
                               </div>
                               <div className="flex items-center justify-between">
-                                <span className="text-slate-400">DEPLOYMENT:</span>
-                                <span className="text-[#00ff66] font-bold">Vercel Edge</span>
+                                <span className="text-slate-400">TOPOLOGIES:</span>
+                                <span className="text-[#00ff66] font-bold">8 Analog Topologies Active</span>
                               </div>
                               <div className="flex items-center justify-between">
-                                <span className="text-slate-400">AESTHETIC:</span>
-                                <span className="text-[#00f0ff]">Cyberpunk HUD</span>
+                                <span className="text-slate-400">MEASUREMENT:</span>
+                                <span className="text-[#00f0ff]">Scope Cursors (ΔV &amp; Δt)</span>
                               </div>
                               <div className="flex items-center justify-between">
-                                <span className="text-slate-400">ACADEMICS:</span>
-                                <span className="text-emerald-400 font-bold">6.38 CGPA (Sem 1–6)</span>
+                                <span className="text-slate-400">FREQUENCY ANALYSIS:</span>
+                                <span className="text-emerald-400 font-bold">Bode dB Magnitude &amp; Phase</span>
                               </div>
                             </div>
 
                             {/* Simulated Live CRT Waveform Oscilloscope Trace */}
                             <div className="rounded-lg bg-black/95 p-2 border border-[#00f0ff]/30 relative overflow-hidden">
                               <div className="flex items-center justify-between text-[10px] text-[#00f0ff] mb-1">
-                                <span>OSCILLOSCOPE TELEMETRY</span>
-                                <span className="text-[#00ff66]">60 FPS CRT</span>
+                                <span>60 FPS PHOSPHOR TRACE</span>
+                                <span className="text-[#00ff66]">LIVE TRANSIENT</span>
                               </div>
                               <div className="h-7 w-full flex items-center justify-center relative">
                                 <svg className="w-full h-full text-[#00f0ff] stroke-current" viewBox="0 0 300 35" fill="none">
@@ -268,15 +268,13 @@ export function App() {
                           </div>
 
                           {/* Bottom Launch Direct Link */}
-                          <a
-                            href="https://hammadpatel.vercel.app"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                          <button
+                            onClick={() => handleNavigate('portfolio')}
                             className="w-full py-2 px-3 rounded-xl bg-gradient-to-r from-sky-600 to-indigo-600 hover:from-sky-500 hover:to-indigo-500 dark:from-[#00f0ff]/20 dark:to-[#0088ff]/20 border border-sky-400/40 dark:border-[#00f0ff]/50 text-white dark:text-[#00f0ff] font-mono text-xs font-bold flex items-center justify-center gap-2 transition-all shadow-md group/btn"
                           >
-                            <span>LAUNCH LIVE SITE</span>
-                            <ExternalLink className="w-3.5 h-3.5" />
-                          </a>
+                            <span>OPEN CIRCUIT SIMULATOR</span>
+                            <ArrowRight className="w-3.5 h-3.5" />
+                          </button>
 
                         </div>
 
@@ -285,39 +283,39 @@ export function App() {
                       <div className="lg:col-span-7 p-6 sm:p-8 flex flex-col justify-between">
                         <div>
                           <div className="text-xs font-mono font-bold text-sky-600 dark:text-[#00f0ff] uppercase tracking-wider mb-1">
-                            PRODUCTION WEB ARCHITECTURE · DEPLOYED ON VERCEL
+                            IIT BOMBAY SPOKEN TUTORIAL · HARDWARE SIMULATION
                           </div>
                           <h3 className="text-xl sm:text-2xl lg:text-3xl font-black font-display text-slate-900 dark:text-white uppercase mb-2">
-                            Hammad Patel Cyberpunk Portfolio & Engineering Workspace
+                            Advanced Virtual Circuit &amp; Waveform Studio
                           </h3>
                           <div className="inline-block mb-3 px-2.5 py-0.5 rounded bg-sky-100 dark:bg-[#00f0ff]/15 border border-sky-300 dark:border-[#00f0ff]/40 text-xs font-mono font-bold text-sky-800 dark:text-[#00f0ff]">
-                            Personal Portfolio Website · Made by Hammad Patel
+                            Hands-On ECE Hardware Engineering Simulator · Built by Hammad Patel
                           </div>
                           <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-cyber leading-relaxed mb-4">
-                            Official personal portfolio and technical workspace deployed live at <strong className="text-sky-600 dark:text-[#00f0ff]">hammadpatel.vercel.app</strong>. Engineered by Hammad Patel with high-contrast cyberpunk gaming aesthetics, interactive circuit and waveform simulation laboratory, interactive project price & hour estimator tailored for Indian markets, and full ECE academic coursework explorer.
+                            Interactive electronic circuit simulation laboratory combining core Electronics &amp; Communication Engineering principles with real-time browser graphics. Simulates 8 analog circuit topologies with dual-trace oscilloscope CRT graphics, interactive cursors for voltage and time delta measurements, dynamic Bode plot frequency response, and real Web Audio acoustic tone synthesis.
                           </p>
 
                           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-mono mb-5">
                             <div className="flex items-center gap-1.5 text-slate-700 dark:text-slate-200">
                               <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-[#00ff66]" />
-                              <span>Live at hammadpatel.vercel.app</span>
+                              <span>8 Circuit Topologies &amp; Schematics</span>
                             </div>
                             <div className="flex items-center gap-1.5 text-slate-700 dark:text-slate-200">
                               <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-[#00ff66]" />
-                              <span>&lt;1s Fast Load</span>
+                              <span>Interactive Scope Cursors (ΔV &amp; Δt)</span>
                             </div>
                             <div className="flex items-center gap-1.5 text-slate-700 dark:text-slate-200">
                               <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-[#00ff66]" />
-                              <span>100% Mobile Responsive</span>
+                              <span>Bode dB Gain &amp; Phase Response</span>
                             </div>
                             <div className="flex items-center gap-1.5 text-slate-700 dark:text-slate-200">
                               <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-[#00ff66]" />
-                              <span>Indian Market ₹499/hr Estimator</span>
+                              <span>Real Web Audio Synthesizer</span>
                             </div>
                           </div>
 
                           <div className="flex flex-wrap gap-1.5 mb-5">
-                            {['React 19', 'Tailwind CSS', 'TypeScript', 'Three.js', 'Web Audio API', 'Vercel'].map(t => (
+                            {['Ngspice', 'CircuitJS', 'Bode Response', 'HTML5 Canvas', 'Web Audio API', 'React 19', 'TypeScript'].map(t => (
                               <span key={t} className="px-2.5 py-1 rounded bg-slate-100 dark:bg-black/60 border border-slate-300 dark:border-[#00f0ff]/30 text-xs font-mono font-bold text-slate-800 dark:text-[#00f0ff]">
                                 {t}
                               </span>
@@ -326,22 +324,20 @@ export function App() {
                         </div>
 
                         <div className="pt-4 border-t border-slate-200 dark:border-white/10 flex flex-wrap items-center gap-3">
-                          <a
-                            href="https://hammadpatel.vercel.app"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 dark:bg-[#00f0ff] dark:hover:bg-[#00d0df] text-white dark:text-black font-mono text-xs font-bold uppercase transition-all shadow-md"
-                          >
-                            <span>Visit hammadpatel.vercel.app</span>
-                            <ExternalLink className="w-3.5 h-3.5" />
-                          </a>
-
                           <button
                             onClick={() => handleNavigate('portfolio')}
+                            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 dark:bg-[#00f0ff] dark:hover:bg-[#00d0df] text-white dark:text-black font-mono text-xs font-bold uppercase transition-all shadow-md"
+                          >
+                            <span>Launch Circuit Studio</span>
+                            <ChevronRight className="w-3.5 h-3.5" />
+                          </button>
+
+                          <button
+                            onClick={() => handleNavigate('coursework')}
                             className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-black/60 text-slate-800 dark:text-white font-mono text-xs font-bold border border-slate-300 dark:border-white/20 transition-colors"
                           >
-                            <span>View in Portfolio</span>
-                            <ChevronRight className="w-3.5 h-3.5" />
+                            <span>Explore GTU ECE Coursework</span>
+                            <ArrowRight className="w-3.5 h-3.5" />
                           </button>
                         </div>
                       </div>
@@ -365,7 +361,7 @@ export function App() {
                       SYSTEM PAGES &amp; DIRECTORIES
                     </h2>
                     <p className="text-slate-600 dark:text-slate-300 text-sm sm:text-base font-cyber max-w-2xl mx-auto mt-2">
-                      Navigate directly to any section to review academic coursework, live interactive circuit simulator, commercial web services, and pricing calculator.
+                      Navigate directly to any section to review GTU ECE academic coursework, live interactive circuit simulator, technical engineering &amp; web skills, and ECE recruitment opportunities.
                     </p>
                   </div>
 
@@ -413,7 +409,7 @@ export function App() {
                         Portfolio &amp; Recent Works
                       </h3>
                       <p className="text-xs text-slate-600 dark:text-slate-400 font-cyber leading-relaxed mb-4">
-                        Showcase of hammadpatel.vercel.app, Shopify storefronts, WordPress bespoke portals, and the Virtual Circuit &amp; Waveform Studio.
+                        Advanced Virtual Circuit &amp; Waveform Studio: 8 analog topologies, real-time CRT oscilloscope, interactive ΔV/Δt measurement cursors, Bode plot frequency analysis, and Web Audio synthesizer.
                       </p>
                       <div className="flex items-center gap-1.5 text-xs font-mono font-bold text-indigo-600 dark:text-indigo-400">
                         <span>Open Portfolio Page</span>
@@ -463,7 +459,7 @@ export function App() {
                         Technical Skills
                       </h3>
                       <p className="text-xs text-slate-600 dark:text-slate-400 font-cyber leading-relaxed mb-4">
-                        WordPress, Shopify, Java, Python, C, RF Communication, Satellite Link calculations, CircuitJS, and modern frontend stacks.
+                        RF &amp; Satellite Communication, VLSI, Digital Signal Processing, CircuitJS &amp; eSim SPICE, Python, Java, C, and Full-Stack Web Development.
                       </p>
                       <div className="flex items-center gap-1.5 text-xs font-mono font-bold text-purple-600 dark:text-purple-400">
                         <span>Open Skills Page</span>
@@ -481,17 +477,17 @@ export function App() {
                           <Zap className="w-6 h-6" />
                         </div>
                         <span className="text-[11px] font-mono font-bold text-amber-600 dark:text-amber-400">
-                          PAGE // 05 · ₹499/HR
+                          PAGE // 05 · ECE ROLES
                         </span>
                       </div>
                       <h3 className="text-xl font-bold font-display text-slate-900 dark:text-white mb-2 group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">
-                        Hire Me &amp; Price Estimator
+                        Hire Me · ECE &amp; Engineering Roles
                       </h3>
                       <p className="text-xs text-slate-600 dark:text-slate-400 font-cyber leading-relaxed mb-4">
-                        Interactive Indian market scope calculator. Toggle features, review timelines, calculate instant ₹ INR quotes, and dispatch to WhatsApp.
+                        Explore Graduate ECE Engineer roles, Circuit Simulation &amp; Hardware R&amp;D internships, Embedded/IoT projects, and technical web dashboards.
                       </p>
                       <div className="flex items-center gap-1.5 text-xs font-mono font-bold text-amber-600 dark:text-amber-400">
-                        <span>Open Estimator Page</span>
+                        <span>Open Hire Me Page</span>
                         <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                       </div>
                     </div>
@@ -611,12 +607,12 @@ export function App() {
         )}
 
         {/* =========================================================================
-            PAGE 6: HIRE ME & ESTIMATOR
+            PAGE 6: HIRE ME · ECE & ENGINEERING ROLES
             ========================================================================= */}
         {currentPage === 'hire-me' && (
           <div className="animate-in fade-in duration-300">
             <CyberSectionReveal threshold={0}>
-              <HireMeSection />
+              <HireMeSection onOpenCV={handleOpenCV} />
             </CyberSectionReveal>
           </div>
         )}

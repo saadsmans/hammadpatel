@@ -3,21 +3,21 @@
 
 @layer base {
   body {
-    font-family: 'Orbitron', 'Montserrat', system-ui, -apple-system, sans-serif;
-    letter-spacing: 0.01em;
+    font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+    letter-spacing: 0.005em;
   }
   
   h1, h2, h3, h4, h5, h6, .font-display, .font-heading, .font-title {
-    font-family: 'Orbitron', system-ui, -apple-system, sans-serif;
+    font-family: 'Poppins', system-ui, -apple-system, sans-serif;
     letter-spacing: -0.01em;
   }
 
   p {
-    font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+    font-family: 'Poppins', system-ui, -apple-system, sans-serif;
   }
 
   .font-cyber {
-    font-family: 'Orbitron', system-ui, -apple-system, sans-serif;
+    font-family: 'Poppins', system-ui, -apple-system, sans-serif;
   }
 
   code, pre, .font-mono, .font-montserrat {
@@ -26,8 +26,13 @@
   }
 }
 
-/* Explicit Orbitron Font Enforcers */
+/* Poppins Display Font */
 .font-display,
+.font-poppins {
+  font-family: 'Poppins', system-ui, -apple-system, sans-serif !important;
+}
+
+/* Explicit Orbitron Font Enforcer (Header & Hero Area for "Hammad Patel") */
 .font-orbitron {
   font-family: 'Orbitron', system-ui, -apple-system, sans-serif !important;
 }

@@ -86,8 +86,8 @@ export const Header: React.FC<HeaderProps> = ({
     {
       id: 'portfolio',
       label: 'Portfolio',
-      badge: 'hammadpatel.vercel.app',
-      desc: 'Recent Works & Virtual Signal Lab',
+      badge: 'Circuit Studio',
+      desc: 'Advanced Circuit & Waveform Lab',
       icon: Briefcase
     },
     {
@@ -100,14 +100,14 @@ export const Header: React.FC<HeaderProps> = ({
     {
       id: 'skills',
       label: 'Skills',
-      desc: 'WordPress, Shopify, Java & ECE',
+      desc: 'Core ECE, VLSI, Python, Java & Web Dev',
       icon: Cpu
     },
     {
       id: 'hire-me',
       label: 'Hire Me',
-      badge: '₹499/hr',
-      desc: 'Indian Market Price Estimator',
+      badge: 'ECE Roles',
+      desc: 'ECE Career, R&D & Internships',
       icon: Zap
     },
     {

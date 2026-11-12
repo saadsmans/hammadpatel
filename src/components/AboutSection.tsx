@@ -33,13 +33,13 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenCV, onOpenHire
             <span>[// ENGINEERING DOSSIER · HAMMAD PATEL]</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-black font-display tracking-tight text-slate-900 dark:text-white uppercase">
-            DUAL DISCIPLINE:{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-indigo-600 to-rose-600 dark:from-[#00f0ff] dark:via-[#38bdf8] dark:to-[#ff0055] dark:neon-cyan-glow">
-              HARDWARE & WEB ARCHITECTURE
+            ECE ENGINEERING &amp;{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-indigo-600 to-cyan-400 dark:from-[#00f0ff] dark:via-[#38bdf8] dark:to-[#00ff66] dark:neon-cyan-glow">
+              TECHNICAL SKILLS
             </span>
           </h2>
           <p className="mt-3 text-slate-600 dark:text-slate-300 max-w-2xl text-xs sm:text-sm font-cyber leading-relaxed">
-            Driven by curiosity in wireless signals, electronic circuit simulation, and high-conversion WordPress & Shopify websites.
+            Dedicated Electronics &amp; Communication Engineering student combining RF, VLSI, and SPICE circuit simulation with modern web development and programming competencies.
           </p>
         </div>
 
@@ -49,13 +49,13 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenCV, onOpenHire
           {/* Left: Bio & Philosophy */}
           <div className="lg:col-span-7 space-y-4 text-slate-600 dark:text-slate-300 font-cyber text-sm sm:text-base leading-relaxed">
             <p>
-              I am an <strong className="text-slate-900 dark:text-white font-bold">Electronics & Communication Engineering student</strong> at <strong className="text-slate-900 dark:text-white font-bold">Government Engineering College, Bharuch</strong> (2023–2027), entering Semester 7 (Winter 2026) with a verified cumulative score of <strong className="text-emerald-600 dark:text-[#00ff66] font-mono font-bold">6.38 CGPA</strong> through Semester 6.
+              I am an <strong className="text-slate-900 dark:text-white font-bold">Electronics &amp; Communication Engineering (BE ECE) student</strong> at <strong className="text-slate-900 dark:text-white font-bold">Government Engineering College, Bharuch</strong> (2023–2027), entering Semester 7 (Winter 2026) with a cumulative academic score of <strong className="text-emerald-600 dark:text-[#00ff66] font-mono font-bold">6.38 CGPA</strong> through Semester 6.
             </p>
             <p>
-              Across 7 rigorous semesters, I have studied communication systems with dedication—including <strong className="text-sky-600 dark:text-[#00f0ff]">Satellite Communication, Radar & Navigation Aids (RNA), Antennas & Propagation, Fiber Optic Communication, VLSI Design, Digital Signal Processing (DSP), Microwave Theory (MTT), and Wireless Sensor Networks (WSN)</strong>.
+              Across 7 rigorous semesters, I have built a strong foundation in core electronics and communication subjects—including <strong className="text-sky-600 dark:text-[#00f0ff]">Satellite Communication, Radar &amp; Navigation Aids (RNA), Antennas &amp; Wave Propagation, Fiber Optic Communication, VLSI Design, Digital Signal Processing (DSP), Microwave Theory (MTT), and Wireless Sensor Networks (WSN)</strong>.
             </p>
             <p>
-              Complementing my hardware background, I specialize in commercial website creation: <strong className="text-rose-600 dark:text-[#ff0055]">WordPress Website Making, Shopify Online Store Creation, WooCommerce setups, and visual website builders like Framer and Webflow</strong>, supported by foundational computing skills in Java (OOP) and Python.
+              Alongside my hardware and circuit simulation background (trained under the <strong className="text-emerald-600 dark:text-[#00ff66]">IIT Bombay Spoken Tutorial Project</strong> in eSim &amp; CircuitJS), I possess strong <strong className="text-indigo-600 dark:text-indigo-400">Web Development and Programming skills</strong> across Python, Java, C, React, TypeScript, and modern web platforms.
             </p>
 
             {/* Core Values / Strengths Grid */}
@@ -63,16 +63,16 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenCV, onOpenHire
               <div className="p-4 rounded-2xl cyber-card flex items-start gap-2.5">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-[#00ff66] shrink-0 mt-0.5" />
                 <div className="text-xs font-mono">
-                  <span className="font-bold text-slate-900 dark:text-white block">Analytical & Empirical</span>
-                  <span className="text-slate-500 dark:text-slate-400 text-[11px]">eSim & CircuitJS SPICE circuit validation</span>
+                  <span className="font-bold text-slate-900 dark:text-white block">Circuit Simulation &amp; SPICE</span>
+                  <span className="text-slate-500 dark:text-slate-400 text-[11px]">eSim, CircuitJS &amp; Ngspice verification</span>
                 </div>
               </div>
 
               <div className="p-4 rounded-2xl cyber-card flex items-start gap-2.5">
                 <CheckCircle2 className="w-4 h-4 text-sky-600 dark:text-[#00f0ff] shrink-0 mt-0.5" />
                 <div className="text-xs font-mono">
-                  <span className="font-bold text-slate-900 dark:text-white block">High-Conversion Web</span>
-                  <span className="text-slate-500 dark:text-slate-400 text-[11px]">WordPress & Shopify setups ready for launch</span>
+                  <span className="font-bold text-slate-900 dark:text-white block">Web Development &amp; Coding</span>
+                  <span className="text-slate-500 dark:text-slate-400 text-[11px]">React, TypeScript, Python, Java &amp; C</span>
                 </div>
               </div>
 
@@ -97,15 +97,15 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenCV, onOpenHire
             <div className="pt-2 flex flex-wrap items-center gap-3">
               <button
                 onClick={onOpenCV}
-                className="px-5 py-2.5 rounded-xl font-mono text-xs font-bold text-slate-900 dark:text-white bg-slate-100 hover:bg-slate-200 dark:bg-black/60 dark:hover:bg-black border border-slate-300 dark:border-[#00f0ff]/40 shadow-sm transition-colors flex items-center gap-2"
+                className="px-5 py-2.5 rounded-xl font-mono text-xs font-bold text-slate-900 dark:text-white bg-slate-100 hover:bg-slate-200 dark:bg-black/60 dark:hover:bg-black border border-slate-300 dark:border-[#00f0ff]/40 shadow-sm transition-colors flex items-center gap-2 cursor-pointer"
               >
-                <span>VIEW CV (PDF)</span>
+                <span>VIEW &amp; DOWNLOAD CV (PDF)</span>
               </button>
               <button
                 onClick={onOpenHireMe}
-                className="px-5 py-2.5 rounded-xl font-mono text-xs font-black text-white dark:text-black bg-sky-600 hover:bg-sky-500 dark:bg-[#00f0ff] dark:hover:bg-[#00d0df] shadow-md dark:shadow-[0_0_12px_rgba(0,240,255,0.4)] transition-all"
+                className="px-5 py-2.5 rounded-xl font-mono text-xs font-black text-white dark:text-black bg-sky-600 hover:bg-sky-500 dark:bg-[#00f0ff] dark:hover:bg-[#00d0df] shadow-md dark:shadow-[0_0_12px_rgba(0,240,255,0.4)] transition-all cursor-pointer"
               >
-                <span>COMMISSION WORK</span>
+                <span>HIRE FOR ECE ROLES</span>
               </button>
             </div>
           </div>
@@ -116,42 +116,42 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenCV, onOpenHire
             <div className="cyber-bracket p-6 rounded-3xl cyber-card">
               <div className="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-[#00f0ff]/20 mb-4">
                 <span className="text-xs font-mono font-bold text-sky-600 dark:text-[#00f0ff] uppercase tracking-wider">
-                  SYSTEM CORE METRICS
+                  ACADEMIC &amp; ENGINEERING METRICS
                 </span>
                 <span className="text-[10px] font-mono text-emerald-600 dark:text-[#00ff66] font-bold">
-                  STATUS: OPTIMAL
+                  STATUS: ACTIVE
                 </span>
               </div>
 
               <div className="space-y-3.5 text-xs font-mono">
-                <div className="flex items-center justify-between">
-                  <span className="text-slate-500 dark:text-slate-400">Current Semester:</span>
-                  <span className="font-bold text-slate-900 dark:text-white">Semester 7 (Final Year · Winter 2026)</span>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-0.5 sm:gap-2">
+                  <span className="text-slate-500 dark:text-slate-400 text-[11px] sm:text-xs">Current Semester:</span>
+                  <span className="font-bold text-slate-900 dark:text-white text-left sm:text-right">Semester 7 (Final Year · Winter 2026)</span>
                 </div>
 
-                <div className="flex items-center justify-between">
-                  <span className="text-slate-500 dark:text-slate-400">Cumulative Academic Score:</span>
-                  <span className="font-black text-emerald-600 dark:text-[#00ff66] text-sm">{PERSONAL_INFO.cgpaTillSem6} CGPA (Sem 1–6)</span>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-0.5 sm:gap-2">
+                  <span className="text-slate-500 dark:text-slate-400 text-[11px] sm:text-xs">Cumulative Academic Score:</span>
+                  <span className="font-black text-emerald-600 dark:text-[#00ff66] text-sm text-left sm:text-right">{PERSONAL_INFO.cgpaTillSem6} CGPA (Sem 1–6)</span>
                 </div>
 
-                <div className="flex items-center justify-between">
-                  <span className="text-slate-500 dark:text-slate-400">Academic Institution:</span>
-                  <span className="font-semibold text-slate-800 dark:text-slate-200">GEC Bharuch, Gujarat, India</span>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-0.5 sm:gap-2">
+                  <span className="text-slate-500 dark:text-slate-400 text-[11px] sm:text-xs">Academic Institution:</span>
+                  <span className="font-semibold text-slate-800 dark:text-slate-200 text-left sm:text-right">GEC Bharuch, Gujarat, India</span>
                 </div>
 
-                <div className="flex items-center justify-between">
-                  <span className="text-slate-500 dark:text-slate-400">Completed Internship:</span>
-                  <span className="font-bold text-sky-600 dark:text-[#00f0ff]">IIT Bombay Spoken Tutorial</span>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-0.5 sm:gap-2">
+                  <span className="text-slate-500 dark:text-slate-400 text-[11px] sm:text-xs">Completed Internship:</span>
+                  <span className="font-bold text-sky-600 dark:text-[#00f0ff] text-left sm:text-right">IIT Bombay Spoken Tutorial</span>
                 </div>
 
-                <div className="flex items-center justify-between">
-                  <span className="text-slate-500 dark:text-slate-400">Simulation Specialization:</span>
-                  <span className="font-semibold text-slate-800 dark:text-slate-200">CircuitJS, eSim, Ngspice</span>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-0.5 sm:gap-2">
+                  <span className="text-slate-500 dark:text-slate-400 text-[11px] sm:text-xs">Core ECE Focus:</span>
+                  <span className="font-semibold text-slate-800 dark:text-slate-200 text-left sm:text-right">RF, Satellite, VLSI, DSP &amp; SPICE</span>
                 </div>
 
-                <div className="flex items-center justify-between">
-                  <span className="text-slate-500 dark:text-slate-400">Web Specializations:</span>
-                  <span className="font-bold text-rose-600 dark:text-[#ff0055]">WordPress, Shopify, Visual CMS</span>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-0.5 sm:gap-2">
+                  <span className="text-slate-500 dark:text-slate-400 text-[11px] sm:text-xs">Software &amp; Web Skills:</span>
+                  <span className="font-bold text-indigo-600 dark:text-indigo-400 text-left sm:text-right">Python, Java, C, React &amp; Web Dev</span>
                 </div>
               </div>
             </div>
